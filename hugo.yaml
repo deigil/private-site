@@ -6,6 +6,7 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableEmoji: true
 
 minify:
   disableXML: true
@@ -33,22 +34,26 @@ params:
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: My Site
-    subtitle: "Deimantas Gilys"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
+    title: Deimantas Gilys
+    subtitle: "👋 Welcome to my Site"
+    imageUrl: "img/self.png"
+    imageWidth: 170
+    imageHeight: 170
     imageTitle: my image
     buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
+      - name: About Me
+        url: about
+      - name: Projects
+        url: projects
+      - name: Resume
+        url: experience
 
   socialIcons:
-    - name: x
-      url: "https://x.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/dei-gil/"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/deigil"
+    - name: facebook
+      url: "https://facebook.com/deimsanic"
+    - name: instagram
+      url: "https://www.instagram.com/deimantasg/"

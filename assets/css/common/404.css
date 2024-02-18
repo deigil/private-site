@@ -1,0 +1,23 @@
+.not-found {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    font-size: 32px; /* Adjust font size as needed */
+    font-weight: 700;
+}
+
+.not-found p {
+    margin-bottom: 20px; /* Add spacing between paragraphs */
+}
+
+.not-found a {
+    color: blue; /* Adjust link color as needed */
+    text-decoration: underline; /* Add underline to links */
+}
