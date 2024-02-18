@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>security on Dei Site</title>
+    <link>/tags/security/</link>
+    <description>Recent content in security on Dei Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 15 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>👮 Security Guard</title>
+      <link>/experience/security_guard/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>/experience/security_guard/</guid>
+      <description>Un-armed Security Organization: Sauliu Namai Banquet Hall · Part-time Duration: Jan 2021 - Present Location: Chicago, Illinois, United States Aiming to complete armed security guard training! Currently an un-armed security guard for a small family owned banquet hall on the south west side of Chicago. I had to deal with multiple interactions that could have gone bad. With my presence and de-escalation skills, the conflicts were peacefully resolved and no harm has ever come to myself or the guests at an event.</description>
+    </item>
+  </channel>
+</rss>

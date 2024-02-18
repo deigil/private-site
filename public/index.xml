@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Dei Site</title>
+    <link>/</link>
+    <description>Recent content on Dei Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🎓 School and Activites</title>
+      <link>/experience/school/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>/experience/school/</guid>
+      <description>My University Experience 👨‍🎓 Illinois Institute of Technology Master of Science - MS, Computer Engineering Duration: Jan 2023 - May 2025 Grade: 3.23 Activities and societies: Volleyball Club 🏐, Esports 🎮 Details: Working towards co-terminal degree (masters alongside bachelors +1 year). Upon starting this degree I have achieved high honor-roll both spring and fall of 2023! I was also a crucial part in the IIT Volleyball Club as both a leader and player.</description>
+    </item>
+    <item>
+      <title>🔧 Freelance</title>
+      <link>/experience/self_employed/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>/experience/self_employed/</guid>
+      <description>Self Employed Type: Freelance Duration: Jan 2020 - Present Location: Chicago, Illinois, United States · Hybrid Self-taught and engaged with projects such as home server and network management. Software development like bash scripting, python projects (django, flask, docker), web projects (html, css, google sites, squarespace), computer repair and cleaning, etc. Currently working on making a custom resume webpage for myself 😆 Lastly, implementing everything into git for better workflow, documentation, and peer review.</description>
+    </item>
+    <item>
+      <title>👾 Nord Security, LT</title>
+      <link>/experience/nord/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>/experience/nord/</guid>
+      <description>Network Infrastrucutre Engineer Organization: Nord Security · Internship Duration: May 2023 - Jul 2023 (3 mos) Location: Vilnius, Vilniaus, Lithuania · On-site Network Infrastructure and web development. Utilized django for web design changes in different environments. Also worked with server management, docker updating, and bash automation.
+Skills:
+Web Design Network Administration Web Development Network Security Python (Programming Language) Django Bash Linux </description>
+    </item>
+    <item>
+      <title>👮 Security Guard</title>
+      <link>/experience/security_guard/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>/experience/security_guard/</guid>
+      <description>Un-armed Security Organization: Sauliu Namai Banquet Hall · Part-time Duration: Jan 2021 - Present Location: Chicago, Illinois, United States Aiming to complete armed security guard training! Currently an un-armed security guard for a small family owned banquet hall on the south west side of Chicago. I had to deal with multiple interactions that could have gone bad. With my presence and de-escalation skills, the conflicts were peacefully resolved and no harm has ever come to myself or the guests at an event.</description>
+    </item>
+    <item>
+      <title>🧑‍🔧 H.B. Taylor Co.</title>
+      <link>/experience/mech/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>/experience/mech/</guid>
+      <description>Mechanical Engineer Organization: H.B. Taylor Co. · Part-time Duration: May 2020 - Sep 2020 (5 mos) Location: Chicago, Illinois, United States · On-site Project setup and takedown. Also installed full factory camera system. Data entry, cleaning, and other miscellaneous jobs were present.
+Skills:
+Communication Mechanical, Electrical, and Plumbing (MEP) Computer Hardware Computer Repair </description>
+    </item>
+    <item>
+      <title>⛵ Sailing Chicago</title>
+      <link>/experience/boat_captain/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/experience/boat_captain/</guid>
+      <description>Boat Captain Organization: Sailing Chicago · Seasonal Duration: Apr 2018 - Present Location: Chicago, Illinois, United States · On-site I am licensed under the United States Coast Guard &amp;ldquo;USCG 25 Ton Masters&amp;rdquo; license. I am captain of a 35ft sail boat named &amp;ldquo;harmony&amp;rdquo; 🌅 in the Monroe Harbor, Chicago. My job is to take customers out to the lake and make sure they have a good and safe time. Communication and peoples skills are very important here.</description>
+    </item>
+    <item>
+      <title>🏫 LT School Office Admin</title>
+      <link>/experience/office_admin/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/experience/office_admin/</guid>
+      <description>Office Administrator Organization: The Lithuanian Cultural School of Chicago · Part-time Duration: Apr 2018 - May 2020 (2 yrs 2 mos) Location: Chicago, Illinois, United States · On-site I was an office admin and tech lead for a Lithuanian school on the south side of Chicago. I was helping teachers, kids, and parents with daily needs. Lead technical aid with all things tech (printers, laptops, desktops, audio, projectors, etc.). Some big events involved prepping audio systems and projection devices for presentations, dancing/music, and general use.</description>
+    </item>
+    <item>
+      <title>🌟 About Me</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/about/</guid>
+      <description>about me</description>
+    </item>
+    <item>
+      <title>📈 Projects</title>
+      <link>/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/projects/</guid>
+      <description>All Current and Past Projects</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Dei Site</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Dei Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bachelors</title>
+      <link>/tags/bachelors/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>/tags/bachelors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>education</title>
+      <link>/tags/education/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>/tags/education/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>freelance</title>
+      <link>/tags/freelance/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>/tags/freelance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>iit</title>
+      <link>/tags/iit/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>/tags/iit/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>learning</title>
+      <link>/tags/learning/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>masters</title>
+      <link>/tags/masters/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>/tags/masters/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>programming</title>
+      <link>/tags/programming/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>nord</title>
+      <link>/tags/nord/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>/tags/nord/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>security</title>
+      <link>/tags/security/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>mech</title>
+      <link>/tags/mech/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/mech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>admin</title>
+      <link>/tags/admin/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/tags/admin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>kids</title>
+      <link>/tags/kids/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/tags/kids/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>office</title>
+      <link>/tags/office/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/tags/office/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>bachelors on Dei Site</title>
+    <link>/tags/bachelors/</link>
+    <description>Recent content in bachelors on Dei Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/bachelors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🎓 School and Activites</title>
+      <link>/experience/school/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>/experience/school/</guid>
+      <description>My University Experience 👨‍🎓 Illinois Institute of Technology Master of Science - MS, Computer Engineering Duration: Jan 2023 - May 2025 Grade: 3.23 Activities and societies: Volleyball Club 🏐, Esports 🎮 Details: Working towards co-terminal degree (masters alongside bachelors +1 year). Upon starting this degree I have achieved high honor-roll both spring and fall of 2023! I was also a crucial part in the IIT Volleyball Club as both a leader and player.</description>
+    </item>
+  </channel>
+</rss>

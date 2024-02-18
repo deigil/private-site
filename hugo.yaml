@@ -1,20 +1,21 @@
 baseURL: ""
 title: Dei Site
+paginate: 5
 theme: PaperMod
-  
+
+enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
+pygmentsUseClasses: true
 
 minify:
   disableXML: true
-  minifyOutput: true
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  
+  author: Dei
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>freelance on Dei Site</title>
+    <link>/tags/freelance/</link>
+    <description>Recent content in freelance on Dei Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/freelance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🔧 Freelance</title>
+      <link>/experience/self_employed/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>/experience/self_employed/</guid>
+      <description>Self Employed Type: Freelance Duration: Jan 2020 - Present Location: Chicago, Illinois, United States · Hybrid Self-taught and engaged with projects such as home server and network management. Software development like bash scripting, python projects (django, flask, docker), web projects (html, css, google sites, squarespace), computer repair and cleaning, etc. Currently working on making a custom resume webpage for myself 😆 Lastly, implementing everything into git for better workflow, documentation, and peer review.</description>
+    </item>
+  </channel>
+</rss>
