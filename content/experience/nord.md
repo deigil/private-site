@@ -1,8 +1,8 @@
 ---
 title: 👾 Nord Security, LT
 tags: ["nord"]
-date: 2023-05-12
 weight: 2
+date: 2023-05-12
 ---
 # Network Infrastrucutre Engineer
 

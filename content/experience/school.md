@@ -1,8 +1,8 @@
 ---
 title: 🎓 School and Activites
 tags: ["learning","programming","education","iit","masters","bachelors"]
-date: 2024-02-17
 weight: 1
+date: 2024-02-17
 ---
 # My University Experience
 

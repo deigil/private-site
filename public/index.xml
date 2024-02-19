@@ -16,13 +16,6 @@
       <description>My University Experience 👨‍🎓 Illinois Institute of Technology Master of Science - MS, Computer Engineering Duration: Jan 2023 - May 2025 Grade: 3.23 Activities and societies: Volleyball Club 🏐, Esports 🎮 Details: Working towards co-terminal degree (masters alongside bachelors +1 year). Upon starting this degree I have achieved high honor-roll both spring and fall of 2023! I was also a crucial part in the IIT Volleyball Club as both a leader and player.</description>
     </item>
     <item>
-      <title>🔧 Freelance</title>
-      <link>https://deiserver.dev/experience/self_employed/</link>
-      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://deiserver.dev/experience/self_employed/</guid>
-      <description>Self Employed Type: Freelance Duration: Jan 2020 - Present Location: Chicago, Illinois, United States · Hybrid Self-taught and engaged with projects such as home server and network management. Software development like bash scripting, python projects (django, flask, docker), web projects (html, css, google sites, squarespace), computer repair and cleaning, etc. Currently working on making a custom resume webpage for myself 😆 Lastly, implementing everything into git for better workflow, documentation, and peer review.</description>
-    </item>
-    <item>
       <title>👾 Nord Security, LT</title>
       <link>https://deiserver.dev/experience/nord/</link>
       <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
@@ -30,6 +23,13 @@
       <description>Network Infrastrucutre Engineer Organization: Nord Security · Internship Duration: May 2023 - Jul 2023 (3 mos) Location: Vilnius, Vilniaus, Lithuania · On-site Network Infrastructure and web development. Utilized django for web design changes in different environments. Also worked with server management, docker updating, and bash automation.
 Skills:
 Web Design Network Administration Web Development Network Security Python (Programming Language) Django Bash Linux </description>
+    </item>
+    <item>
+      <title>🔧 Freelance</title>
+      <link>https://deiserver.dev/experience/self_employed/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/experience/self_employed/</guid>
+      <description>Self Employed Type: Freelance Duration: Jan 2020 - Present Location: Chicago, Illinois, United States · Hybrid Self-taught and engaged with projects such as home server and network management. Software development like bash scripting, python projects (django, flask, docker), web projects (html, css, google sites, squarespace), computer repair and cleaning, etc. Currently working on making a custom resume webpage for myself 😆 Lastly, implementing everything into git for better workflow, documentation, and peer review.</description>
     </item>
     <item>
       <title>👮 Security Guard</title>
