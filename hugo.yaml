@@ -1,4 +1,4 @@
-baseURL: ""
+baseURL: https://deiserver.dev
 title: Dei Site
 paginate: 5
 theme: PaperMod
