@@ -1,5 +1,5 @@
-.hugo_build.lock
 .git
 .github
 .firebase
-public
+public/
+.hugo_build.lock
