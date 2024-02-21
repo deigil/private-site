@@ -1,6 +1,7 @@
 ---
+weight: 4
 title: 🧑‍🔧 H.B. Taylor Co.
-tags: ["mech"]
+tags: ["mech e","engineer","cameras","data entry"]
 date: 2020-05-06
 ---
 # Mechanical Engineer

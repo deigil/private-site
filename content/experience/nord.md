@@ -1,7 +1,7 @@
 ---
-title: 👾 Nord Security, LT
-tags: ["nord"]
 weight: 2
+title: 👾 Nord Security, LT
+tags: ["nord", "django","LT","Lithuania","mysql","database","web","web design","python","docker","bash","cron","systemd","security","automation","site reliability engineer","qos","servers"]
 date: 2023-05-12
 ---
 # Site Reliability Engineer
@@ -10,7 +10,9 @@ date: 2023-05-12
 - **Duration:** May 2023 - Jul 2023 (3 mos)
 - **Location:** Vilnius, Lithuania · On-site
 
-I was a network engineer here focusing on automation and management of servers. Utilized django for web design changes in different environments. Also worked with server management, docker updating, and bash automation.
+I worked with the high level sre team and their 5000+ servers worldwide. Utilized django for web design changes in different environments. Also contributed towards server management, docker updating, bash automation for databases, and other quality of service tasks.
+
+{{<figure src="/img/nord-onsite.jpg" caption="First day Nord Security building in Vilnius, Lithuania 🇱🇹">}}
 
 **Skills:**
 

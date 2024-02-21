@@ -26,34 +26,6 @@
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
 </noscript><meta property="og:title" content="🔧 Freelance" />
 <meta property="og:description" content="Self Employed Type: Freelance Duration: Jan 2020 - Present Location: Chicago, Illinois, United States · Hybrid Self-taught and engaged with projects such as home server and network management. Software development like bash scripting, python projects (django, flask, docker), web projects (html, css, google sites, squarespace), computer repair and cleaning, etc. Currently working on making a custom resume webpage for myself 😆 Lastly, implementing everything into git for better workflow, documentation, and peer review." />
 <meta property="og:type" content="article" />
@@ -96,7 +68,7 @@
   "keywords": [
     "freelance"
   ],
-  "articleBody": "Self Employed Type: Freelance Duration: Jan 2020 - Present Location: Chicago, Illinois, United States · Hybrid Self-taught and engaged with projects such as home server and network management. Software development like bash scripting, python projects (django, flask, docker), web projects (html, css, google sites, squarespace), computer repair and cleaning, etc. Currently working on making a custom resume webpage for myself 😆 Lastly, implementing everything into git for better workflow, documentation, and peer review.\nOn the side I do computer repair and cleaning, camera system installations, network repair and imporvement; as well as other odd jobs here and there.\nSkills:\nServers Ubuntu Linux Bash Python (Programming Language) Django Flask Docker Git Squarespace Google Sites HTML Cascading Style Sheets (CSS) Domain Name System (DNS) Computer Repair Computer Networking Automation Systems Management Managed Servers ",
+  "articleBody": "Self Employed Type: Freelance Duration: Jan 2020 - Present Location: Chicago, Illinois, United States · Hybrid Self-taught and engaged with projects such as home server and network management. Software development like bash scripting, python projects (django, flask, docker), web projects (html, css, google sites, squarespace), computer repair and cleaning, etc. Currently working on making a custom resume webpage for myself 😆 Lastly, implementing everything into git for better workflow, documentation, and peer review.\nOn the side I do computer repair and cleaning, camera system installations, network repair and improvement; as well as other odd jobs here and there.\nSkills:\nServers Ubuntu Linux Bash Python (Programming Language) Django Flask Docker Git Squarespace Google Sites HTML Cascading Style Sheets (CSS) Domain Name System (DNS) Computer Repair Computer Networking Automation Systems Management Managed Servers ",
   "wordCount" : "131",
   "inLanguage": "en",
   "datePublished": "2024-02-17T00:00:00Z",
@@ -124,10 +96,6 @@
 <body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -161,6 +129,16 @@
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://deiserver.dev/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://deiserver.dev/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -183,7 +161,7 @@
 <li><strong>Location:</strong> Chicago, Illinois, United States · Hybrid</li>
 </ul>
 <p>Self-taught and engaged with projects such as home server and network management. Software development like bash scripting, python projects (django, flask, docker), web projects (html, css, google sites, squarespace), computer repair and cleaning, etc. Currently working on making a custom resume webpage for myself 😆 Lastly, implementing everything into git for better workflow, documentation, and peer review.</p>
-<p>On the side I do computer repair and cleaning, camera system installations, network repair and imporvement; as well as other odd jobs here and there.</p>
+<p>On the side I do computer repair and cleaning, camera system installations, network repair and improvement; as well as other odd jobs here and there.</p>
 <p><strong>Skills:</strong></p>
 <ul>
 <li>Servers</li>
@@ -274,7 +252,7 @@
     <span>&copy; 2024 <a href="https://deiserver.dev">Dei Site</a></span>
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> & Themed with
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
@@ -337,6 +315,53 @@
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 

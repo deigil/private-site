@@ -1,7 +1,7 @@
 ---
+weight: 3
 title: 🔧 Freelance
 tags: ["freelance"]
-weight: 3
 date: 2024-02-17
 ---
 # Self Employed

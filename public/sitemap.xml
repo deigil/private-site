@@ -56,7 +56,31 @@
     <loc>https://deiserver.dev/experience/mech/</loc>
     <lastmod>2020-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://deiserver.dev/experience/boat_captain/</loc>
+    <loc>https://deiserver.dev/experience/captain/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/boat/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/bus-boy/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/lake/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/lake-michigan/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/sailing/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/tender/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/waiter/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/experience/tender/</loc>
     <lastmod>2018-04-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://deiserver.dev/experience/office_admin/</loc>
@@ -76,5 +100,7 @@
     <loc>https://deiserver.dev/projects/</loc>
   </url><url>
     <loc>https://deiserver.dev/categories/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/search/</loc>
   </url>
 </urlset>

@@ -1,6 +1,6 @@
 ---
 title: 📈 Projects
-layout: "kind"
+tags: ["Projects","Git","Website","Django","Database","SQL","Python","OCR","TTS"]
 url: "/projects"
 summary: "All Current and Past Projects"
 ---

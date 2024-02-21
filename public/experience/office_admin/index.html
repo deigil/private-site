@@ -26,34 +26,6 @@
         }
 
     </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
 </noscript><meta property="og:title" content="🏫 LT School Office Admin" />
 <meta property="og:description" content="Office Administrator Organization: The Lithuanian Cultural School of Chicago · Part-time Duration: Apr 2018 - May 2020 (2 yrs 2 mos) Location: Chicago, Illinois, United States · On-site I was an office admin and tech lead for a Lithuanian school on the south side of Chicago. I was helping teachers, kids, and parents with daily needs. Lead technical aid with all things tech (printers, laptops, desktops, audio, projectors, etc.). Some big events involved prepping audio systems and projection devices for presentations, dancing/music, and general use." />
 <meta property="og:type" content="article" />
@@ -125,10 +97,6 @@
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
     }
 
 </script>
@@ -161,6 +129,16 @@
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="https://deiserver.dev/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://deiserver.dev/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -201,10 +179,10 @@
       <li><a href="https://deiserver.dev/tags/kids/">kids</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://deiserver.dev/experience/boat_captain/">
+  <a class="prev" href="https://deiserver.dev/experience/tender/">
     <span class="title">« Prev</span>
     <br>
-    <span>⛵ Sailing Chicago</span>
+    <span>🛥️ Burnham Park Yacht Club</span>
   </a>
 </nav>
 
@@ -255,7 +233,7 @@
     <span>&copy; 2024 <a href="https://deiserver.dev">Dei Site</a></span>
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> & Themed with
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
@@ -318,6 +296,53 @@
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 
