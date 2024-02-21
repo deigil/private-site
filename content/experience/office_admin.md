@@ -12,6 +12,7 @@ date: 2018-04-04
 I was an office admin and tech lead for a Lithuanian school on the south side of Chicago. I was helping teachers, kids, and parents with daily needs. Lead technical aid with all things tech (printers, laptops, desktops, audio, projectors, etc.). Some big events involved prepping audio systems and projection devices for presentations, dancing/music, and general use.
 
 **Skills:**
+
 - Communication
 - Leadership
 - Management

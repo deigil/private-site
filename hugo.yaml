@@ -14,16 +14,32 @@ pygmentsUseClasses: true
 minify:
   disableXML: true
 
+menu:
+  main:
+    - name: Search
+      url: search/
+      weight: 5
+    - name: Tags
+      url: tags/
+      weight: 10
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 params:
   env: production
   author: Dei
+  defaultTheme: light
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
+  ShowRssButtonInSectionTermList: false
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -59,3 +75,10 @@ params:
       url: "https://facebook.com/deimsanic"
     - name: instagram
       url: "https://www.instagram.com/deimantasg/"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false

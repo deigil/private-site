@@ -12,9 +12,10 @@ date: 2024-02-17
 
 Self-taught and engaged with projects such as home server and network management. Software development like bash scripting, python projects (django, flask, docker), web projects (html, css, google sites, squarespace), computer repair and cleaning, etc. Currently working on making a custom resume webpage for myself 😆 Lastly, implementing everything into git for better workflow, documentation, and peer review.
 
-On the side I do computer repair and cleaning, camera system installations, network repair and imporvement; as well as other odd jobs here and there.
+On the side I do computer repair and cleaning, camera system installations, network repair and improvement; as well as other odd jobs here and there.
 
 **Skills:**
+
 - Servers
 - Ubuntu
 - Linux

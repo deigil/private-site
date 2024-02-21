@@ -12,6 +12,7 @@ date: 2020-05-06
 Project setup and takedown. Also installed full factory camera system. Data entry, cleaning, and other miscellaneous jobs were present.
 
 **Skills:**
+
 - Communication
 - Mechanical, Electrical, and Plumbing (MEP)
 - Computer Hardware
