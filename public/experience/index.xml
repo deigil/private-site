@@ -9,23 +9,23 @@
     <lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://deiserver.dev/experience/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>🎓 School and Activites</title>
+      <title>🎓 School and Activities</title>
       <link>https://deiserver.dev/experience/school/</link>
       <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://deiserver.dev/experience/school/</guid>
       <description>My University Experience 👨‍🎓 Illinois Institute of Technology Master of Science - MS, Computer Engineering Duration: Jan 2023 - May 2025
 Grade: 3.23
 Activities and societies: Volleyball Club 🏐, Esports 🎮
-Details: Working towards co-terminal degree (masters alongside bachelors +1 year). Upon starting this degree I have achieved high honor-roll both spring and fall of 2023! I was also a crucial part in the IIT Volleyball Club as both a leader and player.</description>
+Details: I am working towards my co-terminal degree (masters alongside bachelors). Upon starting this degree I have achieved high honor-roll both spring and fall of 2023! Alongside my undergrad degree, my grad features a specialization in networking and telecommunications. Notable classes include 5G architecture, wireless networks and protocols, advanced computer networks, machine learning, and digital system-on-chip design with FPGAs.</description>
     </item>
     <item>
       <title>👾 Nord Security, LT</title>
       <link>https://deiserver.dev/experience/nord/</link>
       <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
       <guid>https://deiserver.dev/experience/nord/</guid>
-      <description>Site Reliability Engineer Organization: Nord Security · Internship Duration: May 2023 - Jul 2023 (3 mos) Location: Vilnius, Lithuania · On-site I was a network engineer here focusing on automation and management of servers. Utilized django for web design changes in different environments. Also worked with server management, docker updating, and bash automation.
-Skills:
-Web Design Network Administration Web Development Network Security Python (Programming Language) Django Bash Linux </description>
+      <description>Site Reliability Engineer Organization: Nord Security · Internship Duration: May 2023 - Jul 2023 (3 mos) Location: Vilnius, Lithuania · On-site I worked with the high level sre team and their 5000+ servers worldwide. Utilized django for web design changes in different environments. Also contributed towards server management, docker updating, bash automation for databases, and other quality of service tasks.
+First day Nord Security building in Vilnius, Lithuania 🇱🇹
+Skills:</description>
     </item>
     <item>
       <title>🔧 Freelance</title>
@@ -33,13 +33,6 @@ Web Design Network Administration Web Development Network Security Python (Progr
       <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://deiserver.dev/experience/self_employed/</guid>
       <description>Self Employed Type: Freelance Duration: Jan 2020 - Present Location: Chicago, Illinois, United States · Hybrid Self-taught and engaged with projects such as home server and network management. Software development like bash scripting, python projects (django, flask, docker), web projects (html, css, google sites, squarespace), computer repair and cleaning, etc. Currently working on making a custom resume webpage for myself 😆 Lastly, implementing everything into git for better workflow, documentation, and peer review.</description>
-    </item>
-    <item>
-      <title>👮 Security Guard</title>
-      <link>https://deiserver.dev/experience/security_guard/</link>
-      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://deiserver.dev/experience/security_guard/</guid>
-      <description>Un-armed Security Organization: Sauliu Namai Banquet Hall · Part-time Duration: Jan 2021 - Present Location: Chicago, Illinois, United States Aiming to complete armed security guard training! Currently an un-armed security guard for a small family owned banquet hall on the south west side of Chicago. I had to deal with multiple interactions that could have gone bad. With my presence and de-escalation skills, the conflicts were peacefully resolved and no harm has ever come to myself or the guests at an event.</description>
     </item>
     <item>
       <title>🧑‍🔧 H.B. Taylor Co.</title>
@@ -51,6 +44,14 @@ Skills:
 Communication Mechanical, Electrical, and Plumbing (MEP) Computer Hardware Computer Repair </description>
     </item>
     <item>
+      <title>👮 Security Guard</title>
+      <link>https://deiserver.dev/experience/security_guard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/experience/security_guard/</guid>
+      <description>Un-armed Security Organization: Sauliu Namai Banquet Hall · Part-time Duration: Jan 2021 - Present Location: Chicago, Illinois, United States Aiming to complete armed security guard training! Currently an un-armed security guard for a small family owned banquet hall on the south west side of Chicago called Sauliu Namai. I actually made their website seen below with a simple google site and custom DNS!
+Besides that, I had to deal with multiple interactions that unfortunately, could have gone bad.</description>
+    </item>
+    <item>
       <title>⛵ Sailing Chicago</title>
       <link>https://deiserver.dev/experience/captain/</link>
       <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
@@ -60,17 +61,16 @@ Communication Mechanical, Electrical, and Plumbing (MEP) Computer Hardware Compu
     <item>
       <title>🛥️ Burnham Park Yacht Club</title>
       <link>https://deiserver.dev/experience/tender/</link>
-      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       <guid>https://deiserver.dev/experience/tender/</guid>
-      <description>Tender Driver Organization: Burnham Park Yacht Club · Seasonal Duration: May 2020 - August 2021 Location: Chicago, Illinois, United States · On-site Skills:
-Communication People Management Small Boat Operations Leadership </description>
+      <description>Tender Driver Organization: Burnham Park Yacht Club · Seasonal Duration: May 2020 - January 2021 Location: Chicago, Illinois, United States · On-site I worked as a tender drive for a yacht club called Burnham Park Yacht Club. Although I was just a tender driver my technological skill was put into use and I reprogrammed their old POS (point of sale) systems, fixed windows server issues, and overall assisted in other club operations.</description>
     </item>
     <item>
       <title>🏫 LT School Office Admin</title>
       <link>https://deiserver.dev/experience/office_admin/</link>
       <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
       <guid>https://deiserver.dev/experience/office_admin/</guid>
-      <description>Office Administrator Organization: The Lithuanian Cultural School of Chicago · Part-time Duration: Apr 2018 - May 2020 (2 yrs 2 mos) Location: Chicago, Illinois, United States · On-site I was an office admin and tech lead for a Lithuanian school on the south side of Chicago. I was helping teachers, kids, and parents with daily needs. Lead technical aid with all things tech (printers, laptops, desktops, audio, projectors, etc.). Some big events involved prepping audio systems and projection devices for presentations, dancing/music, and general use.</description>
+      <description>Office Administrator Organization: The Lithuanian Cultural School of Chicago · Part-time Duration: Apr 2018 - May 2020 (2 yrs 2 mos) Location: Chicago, Illinois, United States · On-site I was an office admin and tech lead for a Lithuanian school on the south side of Chicago called Cikagos Lituanistine Mokykla. I was helping teachers, kids, and parents with daily needs. Lead technical aid with all things tech (printers, laptops, desktops, audio, projectors, etc.</description>
     </item>
   </channel>
 </rss>

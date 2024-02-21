@@ -11,6 +11,20 @@
     <loc>https://deiserver.dev/experience/self_employed/</loc>
     <lastmod>2024-02-17T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://deiserver.dev/experience/mech/</loc>
+    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/experience/security_guard/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/experience/captain/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/experience/tender/</loc>
+    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/experience/office_admin/</loc>
+    <lastmod>2018-04-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://deiserver.dev/tags/bachelors/</loc>
     <lastmod>2024-02-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -41,28 +55,94 @@
     <loc>https://deiserver.dev/tags/</loc>
     <lastmod>2024-02-17T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://deiserver.dev/tags/automation/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/bash/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/cron/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/database/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/django/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/docker/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/lithuania/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/lt/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/mysql/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://deiserver.dev/tags/nord/</loc>
     <lastmod>2023-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://deiserver.dev/experience/security_guard/</loc>
-    <lastmod>2021-01-15T00:00:00+00:00</lastmod>
+    <loc>https://deiserver.dev/tags/python/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/qos/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://deiserver.dev/tags/security/</loc>
-    <lastmod>2021-01-15T00:00:00+00:00</lastmod>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://deiserver.dev/tags/mech/</loc>
-    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
+    <loc>https://deiserver.dev/tags/servers/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://deiserver.dev/experience/mech/</loc>
-    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
+    <loc>https://deiserver.dev/tags/site-reliability-engineer/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://deiserver.dev/experience/captain/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <loc>https://deiserver.dev/tags/systemd/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/web/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/web-design/</loc>
+    <lastmod>2023-05-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://deiserver.dev/tags/boat/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://deiserver.dev/tags/bus-boy/</loc>
+    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/pos/</loc>
+    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/tender/</loc>
+    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/waiter/</loc>
+    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/windows-server/</loc>
+    <lastmod>2020-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/cameras/</loc>
+    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/data-entry/</loc>
+    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/engineer/</loc>
+    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/mech-e/</loc>
+    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/communication/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/intense/</loc>
     <lastmod>2018-04-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://deiserver.dev/tags/lake/</loc>
@@ -71,36 +151,75 @@
     <loc>https://deiserver.dev/tags/lake-michigan/</loc>
     <lastmod>2018-04-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://deiserver.dev/tags/license/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/people/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://deiserver.dev/tags/sailing/</loc>
     <lastmod>2018-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://deiserver.dev/tags/tender/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://deiserver.dev/tags/waiter/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://deiserver.dev/experience/tender/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://deiserver.dev/experience/office_admin/</loc>
+    <loc>https://deiserver.dev/tags/admin/</loc>
     <lastmod>2018-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://deiserver.dev/tags/admin/</loc>
+    <loc>https://deiserver.dev/tags/events/</loc>
     <lastmod>2018-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://deiserver.dev/tags/kids/</loc>
     <lastmod>2018-04-04T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://deiserver.dev/tags/lead/</loc>
+    <lastmod>2018-04-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://deiserver.dev/tags/office/</loc>
+    <lastmod>2018-04-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://deiserver.dev/tags/tech/</loc>
     <lastmod>2018-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://deiserver.dev/about/</loc>
   </url><url>
     <loc>https://deiserver.dev/projects/</loc>
   </url><url>
+    <loc>https://deiserver.dev/tags/about-me/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/adb/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/android/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/bar/</loc>
+  </url><url>
     <loc>https://deiserver.dev/categories/</loc>
   </url><url>
+    <loc>https://deiserver.dev/tags/childhood/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/de-escalation/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/europe/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/gaming/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/git/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/ocr/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/parking-lot/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/projects/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/rooting/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/safety/</loc>
+  </url><url>
     <loc>https://deiserver.dev/search/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/sql/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/tts/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/tuff/</loc>
+  </url><url>
+    <loc>https://deiserver.dev/tags/website/</loc>
   </url>
 </urlset>

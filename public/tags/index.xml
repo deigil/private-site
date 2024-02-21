@@ -58,6 +58,69 @@
       <description></description>
     </item>
     <item>
+      <title>automation</title>
+      <link>https://deiserver.dev/tags/automation/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>bash</title>
+      <link>https://deiserver.dev/tags/bash/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/bash/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>cron</title>
+      <link>https://deiserver.dev/tags/cron/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/cron/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://deiserver.dev/tags/database/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/database/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Django</title>
+      <link>https://deiserver.dev/tags/django/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/django/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>docker</title>
+      <link>https://deiserver.dev/tags/docker/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lithuania</title>
+      <link>https://deiserver.dev/tags/lithuania/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/lithuania/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LT</title>
+      <link>https://deiserver.dev/tags/lt/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/lt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>mysql</title>
+      <link>https://deiserver.dev/tags/mysql/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/mysql/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>nord</title>
       <link>https://deiserver.dev/tags/nord/</link>
       <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
@@ -65,31 +128,143 @@
       <description></description>
     </item>
     <item>
+      <title>Python</title>
+      <link>https://deiserver.dev/tags/python/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>qos</title>
+      <link>https://deiserver.dev/tags/qos/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/qos/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>security</title>
       <link>https://deiserver.dev/tags/security/</link>
-      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
       <guid>https://deiserver.dev/tags/security/</guid>
       <description></description>
     </item>
     <item>
-      <title>mech</title>
-      <link>https://deiserver.dev/tags/mech/</link>
-      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://deiserver.dev/tags/mech/</guid>
+      <title>servers</title>
+      <link>https://deiserver.dev/tags/servers/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/servers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>site reliability engineer</title>
+      <link>https://deiserver.dev/tags/site-reliability-engineer/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/site-reliability-engineer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>systemd</title>
+      <link>https://deiserver.dev/tags/systemd/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/systemd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>web</title>
+      <link>https://deiserver.dev/tags/web/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/web/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>web design</title>
+      <link>https://deiserver.dev/tags/web-design/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/web-design/</guid>
       <description></description>
     </item>
     <item>
       <title>boat</title>
       <link>https://deiserver.dev/tags/boat/</link>
-      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       <guid>https://deiserver.dev/tags/boat/</guid>
       <description></description>
     </item>
     <item>
       <title>bus boy</title>
       <link>https://deiserver.dev/tags/bus-boy/</link>
-      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
       <guid>https://deiserver.dev/tags/bus-boy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>POS</title>
+      <link>https://deiserver.dev/tags/pos/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/pos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>tender</title>
+      <link>https://deiserver.dev/tags/tender/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/tender/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>waiter</title>
+      <link>https://deiserver.dev/tags/waiter/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/waiter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>windows server</title>
+      <link>https://deiserver.dev/tags/windows-server/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/windows-server/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>cameras</title>
+      <link>https://deiserver.dev/tags/cameras/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/cameras/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>data entry</title>
+      <link>https://deiserver.dev/tags/data-entry/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/data-entry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>engineer</title>
+      <link>https://deiserver.dev/tags/engineer/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/engineer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>mech e</title>
+      <link>https://deiserver.dev/tags/mech-e/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/mech-e/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>communication</title>
+      <link>https://deiserver.dev/tags/communication/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/communication/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>intense</title>
+      <link>https://deiserver.dev/tags/intense/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/intense/</guid>
       <description></description>
     </item>
     <item>
@@ -107,24 +282,24 @@
       <description></description>
     </item>
     <item>
+      <title>license</title>
+      <link>https://deiserver.dev/tags/license/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/license/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>people</title>
+      <link>https://deiserver.dev/tags/people/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/people/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>sailing</title>
       <link>https://deiserver.dev/tags/sailing/</link>
       <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
       <guid>https://deiserver.dev/tags/sailing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>tender</title>
-      <link>https://deiserver.dev/tags/tender/</link>
-      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://deiserver.dev/tags/tender/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>waiter</title>
-      <link>https://deiserver.dev/tags/waiter/</link>
-      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://deiserver.dev/tags/waiter/</guid>
       <description></description>
     </item>
     <item>
@@ -135,6 +310,13 @@
       <description></description>
     </item>
     <item>
+      <title>events</title>
+      <link>https://deiserver.dev/tags/events/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/events/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>kids</title>
       <link>https://deiserver.dev/tags/kids/</link>
       <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
@@ -142,10 +324,150 @@
       <description></description>
     </item>
     <item>
+      <title>lead</title>
+      <link>https://deiserver.dev/tags/lead/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/lead/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>office</title>
       <link>https://deiserver.dev/tags/office/</link>
       <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
       <guid>https://deiserver.dev/tags/office/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>tech</title>
+      <link>https://deiserver.dev/tags/tech/</link>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>https://deiserver.dev/tags/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/about-me/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ADB</title>
+      <link>https://deiserver.dev/tags/adb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/adb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Android</title>
+      <link>https://deiserver.dev/tags/android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/android/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>bar</title>
+      <link>https://deiserver.dev/tags/bar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/bar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Childhood</title>
+      <link>https://deiserver.dev/tags/childhood/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/childhood/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>de-escalation</title>
+      <link>https://deiserver.dev/tags/de-escalation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/de-escalation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Europe</title>
+      <link>https://deiserver.dev/tags/europe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/europe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gaming</title>
+      <link>https://deiserver.dev/tags/gaming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/gaming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>https://deiserver.dev/tags/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OCR</title>
+      <link>https://deiserver.dev/tags/ocr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/ocr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>parking lot</title>
+      <link>https://deiserver.dev/tags/parking-lot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/parking-lot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>https://deiserver.dev/tags/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/projects/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rooting</title>
+      <link>https://deiserver.dev/tags/rooting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/rooting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>safety</title>
+      <link>https://deiserver.dev/tags/safety/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/safety/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL</title>
+      <link>https://deiserver.dev/tags/sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TTS</title>
+      <link>https://deiserver.dev/tags/tts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/tts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>tuff</title>
+      <link>https://deiserver.dev/tags/tuff/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/tuff/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Website</title>
+      <link>https://deiserver.dev/tags/website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/tags/website/</guid>
       <description></description>
     </item>
   </channel>

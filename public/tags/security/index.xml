@@ -6,14 +6,24 @@
     <description>Recent content in security on Dei Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 15 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 May 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://deiserver.dev/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>👾 Nord Security, LT</title>
+      <link>https://deiserver.dev/experience/nord/</link>
+      <pubDate>Fri, 12 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://deiserver.dev/experience/nord/</guid>
+      <description>Site Reliability Engineer Organization: Nord Security · Internship Duration: May 2023 - Jul 2023 (3 mos) Location: Vilnius, Lithuania · On-site I worked with the high level sre team and their 5000+ servers worldwide. Utilized django for web design changes in different environments. Also contributed towards server management, docker updating, bash automation for databases, and other quality of service tasks.
+First day Nord Security building in Vilnius, Lithuania 🇱🇹
+Skills:</description>
+    </item>
     <item>
       <title>👮 Security Guard</title>
       <link>https://deiserver.dev/experience/security_guard/</link>
-      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://deiserver.dev/experience/security_guard/</guid>
-      <description>Un-armed Security Organization: Sauliu Namai Banquet Hall · Part-time Duration: Jan 2021 - Present Location: Chicago, Illinois, United States Aiming to complete armed security guard training! Currently an un-armed security guard for a small family owned banquet hall on the south west side of Chicago. I had to deal with multiple interactions that could have gone bad. With my presence and de-escalation skills, the conflicts were peacefully resolved and no harm has ever come to myself or the guests at an event.</description>
+      <description>Un-armed Security Organization: Sauliu Namai Banquet Hall · Part-time Duration: Jan 2021 - Present Location: Chicago, Illinois, United States Aiming to complete armed security guard training! Currently an un-armed security guard for a small family owned banquet hall on the south west side of Chicago called Sauliu Namai. I actually made their website seen below with a simple google site and custom DNS!
+Besides that, I had to deal with multiple interactions that unfortunately, could have gone bad.</description>
     </item>
   </channel>
 </rss>
