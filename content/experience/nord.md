@@ -10,7 +10,7 @@ date: 2023-05-12
 - **Duration:** May 2023 - Jul 2023 (3 mos)
 - **Location:** Vilnius, Lithuania · On-site
 
-I worked with the high level sre team and their 5000+ servers worldwide. Utilized django for web design changes in different environments. Also contributed towards server management, docker updating, bash automation for databases, and other quality of service tasks.
+During my internship, I worked with the SRE infra team, contributing to various projects for their 5000+ servers worldwide. This included web development for PROD/QA environments with Django, server management, maintaining utilized services, and working on Docker images while conducting thorough research on changelogs. Moreover, I implemented bash automation procedures and devised backup solutions for specific SQL databases to ensure data integrity and system reliability.
 
 {{<figure src="/img/nord-onsite.jpg" caption="First day Nord Security building in Vilnius, Lithuania 🇱🇹">}}
 
