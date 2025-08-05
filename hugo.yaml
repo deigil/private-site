@@ -55,16 +55,16 @@ outputs:
     - RSS
 
 params:
-  env: production
+  env: development  # Change from production to development to disable schema
   author: Dei
-  defaultTheme: auto  # Consider changing from 'light' to 'auto' for better UX
+  defaultTheme: auto
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowWordCount: true
-  ShowRssButtonInSectionTermList: true  # Add this new feature
+  ShowRssButtonInSectionTermList: true
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -78,26 +78,26 @@ params:
   assets:
     disableHLJS: false
     disableFingerprinting: false
-    favicon: "img/favicon.ico"  # Add favicon support
+    favicon: "img/favicon.ico"
     favicon16x16: "img/favicon-16x16.png"
     favicon32x32: "img/favicon-32x32.png"
     apple_touch_icon: "img/apple-touch-icon.png"
 
   # ADD: Enhanced SEO features
-  images: ["img/og-image.png"]  # Add for better social media sharing
+  images: ["img/og-image.png"]
   
   # ENHANCE: Profile mode with better configuration
   profileMode:
     enabled: true
     title: Deimantas Gilys
     subtitle: "👋 Welcome to my Site"
-    imageUrl: "/img/self.png"  # Add leading slash for absolute path
+    imageUrl: "/img/self.png"
     imageWidth: 170
     imageHeight: 170
-    imageTitle: "Deimantas Gilys Profile"  # Better alt text
+    imageTitle: "Deimantas Gilys Profile"
     buttons:
       - name: About Me
-        url: "aboutme"  # Fix: was "about" but file is "aboutme.md"
+        url: "aboutme"
       - name: Projects
         url: "projects"
       - name: Resume
@@ -116,8 +116,8 @@ params:
 
   # ADD: Cover image configuration
   cover:
-    linkFullImages: true  # Enable full image links
-    responsiveImages: true  # Enable responsive images
+    linkFullImages: true
+    responsiveImages: true
 
   # ADD: Edit post functionality
   editPost:
@@ -138,7 +138,7 @@ markup:
   highlight:
     noClasses: false
     anchorLineNos: true
-    codeFences: true
+    codeFines: true
     guessSyntax: true
     lineNos: true
-    style: "github-dark"  # Better syntax highlighting
+    style: "github-dark"
