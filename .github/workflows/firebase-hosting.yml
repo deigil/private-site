@@ -1,13 +1,10 @@
 name: Deploy to Firebase Hosting
-'on':
+
+on:
   push:
-    branches:
-      - main
-      - preview
+    branches: [main, preview]
   pull_request:
-    branches:
-      - main
-      - preview
+    branches: [main, preview]
 
 permissions:
   checks: write
@@ -15,11 +12,11 @@ permissions:
   pull-requests: write
 
 jobs:
-  build_and_preview:
-    if: github.event_name == 'pull_request'
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           submodules: true
           fetch-depth: 0
@@ -33,34 +30,10 @@ jobs:
       - name: Build Hugo site
         run: hugo --gc --minify
 
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DEI_SITE_6938A }}'
           projectId: dei-site-6938a
-          channelId: preview
-
-  build_and_deploy:
-    if: github.event_name == 'push'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
-          fetch-depth: 0
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: '0.147.7'
-          extended: true
-
-      - name: Build Hugo site
-        run: hugo --gc --minify
-
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DEI_SITE_6938A }}'
-          projectId: dei-site-6938a
-          channelId: live 
+          channelId: ${{ github.event_name == 'pull_request' && 'preview' || 'live' }} 
