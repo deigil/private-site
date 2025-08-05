@@ -2,9 +2,11 @@ name: Deploy to Firebase Hosting
 
 on:
   push:
-    branches: [main, preview]
+    branches:
+      - main
   pull_request:
-    branches: [main, preview]
+    branches:
+      - main
 
 permissions:
   checks: write
@@ -12,28 +14,55 @@ permissions:
   pull-requests: write
 
 jobs:
-  deploy:
+  build_and_preview:
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
         with:
           submodules: true
-          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.147.7'
+          hugo-version: 'latest'
           extended: true
 
-      - name: Build Hugo site
+      - name: Build for Preview
         run: hugo --gc --minify
 
-      - name: Deploy to Firebase Hosting
+      - name: Deploy to Preview Channel
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DEI_SITE_6938A }}'
           projectId: dei-site-6938a
-          channelId: ${{ github.event_name == 'pull_request' && 'preview' || 'live' }} 
+          channelId: preview
+          expires: 7d # Optional: Preview channels expire after 7 days
+
+  build_and_deploy_live:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build for Production
+        run: hugo --gc --minify -b "https://deiserver.dev"
+
+      - name: Deploy to Live Channel
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DEI_SITE_6938A }}'
+          projectId: dei-site-6938a
+          channelId: live 
