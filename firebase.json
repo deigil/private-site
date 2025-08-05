@@ -8,16 +8,44 @@
     ],
     "rewrites": [
       {
+        "source": "/experience/school",
+        "destination": "/experience/school/index.html"
+      },
+      {
+        "source": "/experience/nord",
+        "destination": "/experience/nord/index.html"
+      },
+      {
+        "source": "/experience/freelance",
+        "destination": "/experience/freelance/index.html"
+      },
+      {
+        "source": "/experience/mech",
+        "destination": "/experience/mech/index.html"
+      },
+      {
+        "source": "/experience/security",
+        "destination": "/experience/security/index.html"
+      },
+      {
+        "source": "/experience/captain",
+        "destination": "/experience/captain/index.html"
+      },
+      {
+        "source": "/experience/tender",
+        "destination": "/experience/tender/index.html"
+      },
+      {
+        "source": "/experience/office-admin",
+        "destination": "/experience/office-admin/index.html"
+      },
+      {
         "source": "/search",
         "destination": "/search/index.html"
       },
       {
         "source": "/tags",
         "destination": "/tags/index.html"
-      },
-      {
-        "source": "/experience",
-        "destination": "/experience/index.html"
       }
     ],
     "cleanUrls": true,
