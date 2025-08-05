@@ -1,6 +1,8 @@
 ---
 weight: 3
 title: 🔧 Freelance
+url: "/experience/freelance/"
+slug: "freelance"
 tags: ["freelance"]
 date: 2024-02-17
 ---

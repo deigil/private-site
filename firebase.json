@@ -5,6 +5,22 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+    "rewrites": [
+      {
+        "source": "/search",
+        "destination": "/search/index.html"
+      },
+      {
+        "source": "/tags",
+        "destination": "/tags/index.html"
+      },
+      {
+        "source": "/experience",
+        "destination": "/experience/index.html"
+      }
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false
   }
 }

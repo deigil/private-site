@@ -12,20 +12,36 @@ buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
 
+# Add language and URL settings
+languageCode: en-us
+defaultContentLanguage: en
+
+# URL handling
+uglyURLs: false
+canonifyURLs: false
+relativeURLs: false
+
+# Permalink structure
+permalinks:
+  experience: "/experience/:slug/"
+  tags: "/tags/:slug/"
+
+# Section configuration
+taxonomies:
+  tag: tags
+  category: categories
+
 minify:
   disableXML: true
 
 menu:
   main:
-    - name: Archive
-      url: /archives/
-      weight: 5
     - name: Search
       url: /search/
-      weight: 10
+      weight: 5
     - name: Tags
       url: /tags/
-      weight: 15
+      weight: 10
 
 outputs:
   home:
@@ -75,7 +91,7 @@ params:
     enabled: true
     title: Deimantas Gilys
     subtitle: "👋 Welcome to my Site"
-    imageUrl: "img/self.png"
+    imageUrl: "/img/self.png"  # Add leading slash for absolute path
     imageWidth: 170
     imageHeight: 170
     imageTitle: "Deimantas Gilys Profile"  # Better alt text

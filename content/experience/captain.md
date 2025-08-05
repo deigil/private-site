@@ -1,6 +1,8 @@
 ---
 weight: 6
 title: ⛵ Sailing Chicago
+url: "/experience/captain/"
+slug: "captain"
 tags: ["sailing","lake","lake michigan","people","communication","intense","license"]
 date: 2018-04-20
 ---

@@ -1,6 +1,8 @@
 ---
 weight: 8
 title: 🏫 LT School Office Admin
+url: "/experience/office-admin/"
+slug: "office-admin"
 tags: ["office", "admin", "kids","events","tech","lead"]
 date: 2018-04-04
 ---

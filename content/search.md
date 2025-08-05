@@ -1,5 +1,7 @@
 ---
 title: "Search"
-placeholder: Search my site ...
+url: "/search/"
+placeholder: "Search my site ..."
 layout: "search"
+summary: "Search through all content"
 ---

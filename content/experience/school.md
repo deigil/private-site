@@ -1,6 +1,8 @@
 ---
 weight: 1
 title: 🎓 School and Activities
+url: "/experience/school/"
+slug: "school"
 tags: ["learning","programming","education","iit","masters","bachelors"]
 date: 2024-02-17
 ---

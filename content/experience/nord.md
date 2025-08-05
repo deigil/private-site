@@ -1,6 +1,8 @@
 ---
 weight: 2
-title: 👾 Nord Security, LT
+title: �� Nord Security, LT
+url: "/experience/nord/"
+slug: "nord"
 tags: ["nord", "django","LT","Lithuania","mysql","database","web","web design","python","docker","bash","cron","systemd","security","automation","site reliability engineer","qos","servers"]
 date: 2023-05-12
 ---

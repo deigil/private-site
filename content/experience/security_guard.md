@@ -1,7 +1,10 @@
 ---
 weight: 5
 title: 👮 Security Guard
+url: "/experience/security/"
+slug: "security"
 tags: ["security","de-escalation","tuff","parking lot","bar","safety"]
+date: 2021-01-01
 ---
 # Un-armed Security
 

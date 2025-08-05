@@ -1,6 +1,8 @@
 ---
 weight: 4
 title: 🧑‍🔧 H.B. Taylor Co.
+url: "/experience/mech/"
+slug: "mech"
 tags: ["mech e","engineer","cameras","data entry"]
 date: 2020-05-06
 ---

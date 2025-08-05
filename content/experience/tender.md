@@ -1,6 +1,8 @@
 ---
 weight: 7
 title: 🛥️ Burnham Park Yacht Club
+url: "/experience/tender/"
+slug: "tender"
 tags: ["tender", "waiter", "bus boy", "boat","POS","windows server"]
 date: 2020-05-10
 ---
