@@ -46,7 +46,7 @@
             <div class="buttons">
                 {{- range $index, $button := . }}
                 {{- if lt $index 2 }}
-                <a class="button" href="{{ trim $button.url " " }}" rel="noopener" title="{{ $button.name }}">
+                <a class="button" href="{{ $button.url | relLangURL }}" rel="noopener" title="{{ $button.name }}">
                     <span class="button-inner">
                         {{ $button.name }}
                         {{- if (findRE "://" $button.url) }}&nbsp;
@@ -65,7 +65,7 @@
             <div class="buttons">
                 {{- range $index, $button := . }}
                 {{- if ge $index 2 }}
-                <a class="button" href="{{ trim $button.url " " }}" rel="noopener" title="{{ $button.name }}">
+                <a class="button" href="{{ $button.url | relLangURL }}" rel="noopener" title="{{ $button.name }}">
                     <span class="button-inner">
                         {{ $button.name }}
                         {{- if (findRE "://" $button.url) }}&nbsp;

@@ -97,11 +97,11 @@ params:
     imageTitle: "Deimantas Gilys Profile"
     buttons:
       - name: About Me
-        url: "aboutme"
+        url: "/aboutme/"
       - name: Projects
-        url: "projects"
+        url: "/projects/"
       - name: Resume
-        url: "experience"
+        url: "/experience/"
 
   # ADD: Enhanced search configuration
   fuseOpts:
