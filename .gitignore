@@ -1,5 +1,4 @@
 .git
-.github
 .firebase
 public/
 .hugo_build.lock
