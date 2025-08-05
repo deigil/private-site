@@ -1,4 +1,4 @@
-baseURL: https://deiserver.dev
+baseURL: "/"
 title: Dei Site
 pagination:
   pagerSize: 5
@@ -12,14 +12,14 @@ buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
 
-# Add language and URL settings
+# Fix URL handling for previews
 languageCode: en-us
 defaultContentLanguage: en
 
-# URL handling
+# IMPORTANT: These settings fix preview URL issues
 uglyURLs: false
-canonifyURLs: false
-relativeURLs: false
+canonifyURLs: false  # Don't force absolute URLs
+relativeURLs: true   # Use relative URLs for better preview compatibility
 
 # Permalink structure
 permalinks:
