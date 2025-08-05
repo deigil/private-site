@@ -14,7 +14,7 @@
             {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
             {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
                 {{- if (not (and (not .imageHeight) (not .imageWidth))) }}
-                    {{- $img = $img.Resize (printf "%dx%d" .imageWidth .imageHeight) }}
+                    {{- $img = $img.Resize (printf "%dx%d webp q85" .imageWidth .imageHeight) }}
                 {{- else if .imageHeight }}
                     {{- $img = $img.Resize (printf "x%d" .imageHeight) }}
                 {{ else if .imageWidth }}
@@ -23,11 +23,18 @@
                     {{- $img = $img.Resize "150x150" }}
                 {{- end }}
             {{- end }}
-            <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
-                height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+            <img loading="lazy" draggable="false" src="{{ $img.Permalink }}" 
+                 alt="{{ .imageTitle | default "profile image" }}" 
+                 title="{{ .imageTitle }}"
+                 height="{{ .imageHeight | default 150 }}" 
+                 width="{{ .imageWidth | default 150 }}" />
         {{- else }}
-        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
-            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        <!-- Fallback for missing images -->
+        <img loading="lazy" draggable="false" src="{{ .imageUrl | absURL }}" 
+             alt="{{ .imageTitle | default "profile image" }}" 
+             title="{{ .imageTitle }}"
+             height="{{ .imageHeight | default 150 }}" 
+             width="{{ .imageWidth | default 150 }}" />
         {{- end }}
         {{- end }}
         <h1>{{ .title | default site.Title | markdownify }}</h1>

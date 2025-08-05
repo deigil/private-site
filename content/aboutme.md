@@ -1,14 +1,14 @@
 ---
 title: 🌟 About Me
 layout: "kind"
-url: "/about"
+url: "/aboutme"
 summary: "about me"
 tags: ["Europe","Lithuania","ADB","Android","Rooting","Gaming","About Me","Childhood",]
 ---
 
 ## A short biography
 
-Well, where should I start.. My name is **Deimantas**, A.K.A **Dei** and I am a 22 year old, born and raised in a small country in Europe. Only 3 million people live here, maybe less now 😯 but it is very beautiful, clean, and where half of my childhood was 🇱🇹.
+Well, where should I start.. My name is **Deimantas**, A.K.A **Dei** and I am a 23 year old, born and raised in a small country in Europe. Only 3 million people live here, maybe less now 😯 but it is very beautiful, clean, and where half of my childhood was 🇱🇹.
 
 {{< youtube ujoNbwMf5iM >}}<br />
 

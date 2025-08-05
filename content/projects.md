@@ -3,11 +3,16 @@ title: 📈 Projects
 tags: ["Projects","Git","Website","Django","Database","SQL","Python","OCR","TTS"]
 url: "/projects"
 summary: "All Current and Past Projects"
+cover:
+    image: "img/projects-banner.png"  # Add a cover image
+    alt: "My Projects"
+    relative: false
+ShowToc: true
 ---
 
-{{< rawhtml >}}
-<h2 style="text-align: center;">Some of my git projects can be seen below!</h2>
-{{< /rawhtml>}}
+## Featured Projects
+
+Here are some of my notable projects:
 
 {{< script >}}
 <div style="text-align: center; padding: 10px;">
@@ -22,6 +27,9 @@ summary: "All Current and Past Projects"
 </div>
 {{< /script >}}
 
-{{< rawhtml >}}
-<p style="text-align: center;">There is a lot more to come as well as other posts outside of github so stay tuned!</p>
-{{< /rawhtml>}}
+## Skills & Technologies
+
+- **Languages:** Python, Java, C++, JavaScript
+- **Frameworks:** Django, Flask, Hugo
+- **Tools:** Docker, Git, AWS
+- **Databases:** SQL, NoSQL
