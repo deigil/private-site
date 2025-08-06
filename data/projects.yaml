@@ -17,3 +17,28 @@
   url: "https://github.com/deigil/wifiscanner-backend"
   description: "A backend service that collects and analyzes Wi-Fi network data. It's designed to identify network vulnerabilities and provide insights into Wi-Fi security."
   tags: ["Python", "Django", "API", "Backend", "Networking"]
+
+- name: "MC Watchdog"
+  url: "https://github.com/deigil/mc-watchdog"
+  description: "A Python-based watchdog service that monitors and manages a Minecraft server running in Docker, with Discord integration for commands and notifications."
+  tags: ["Python", "Docker", "Discord", "Automation"]
+
+- name: "Hyprland Dotfiles"
+  url: "https://github.com/deigil/desktop-dotfiles-hypr"
+  description: "A collection of my personal Hyprland dotfiles for both my desktop and laptop, featuring advanced multi-monitor workspace management and session restoration. View the laptop configuration at https://github.com/deigil/laptop-dotfiles-hypr"
+  tags: ["Hyprland", "Linux", "dotfiles", "Wayland", "Customization"]
+
+- name: "Cesar's Site"
+  url: "https://github.com/deigil/cesars_site"
+  description: "A personal website for a client, built with Hugo, showcasing their portfolio and blog."
+  tags: ["Hugo", "Go", "Business", "Frontend", "Web-Development"]
+
+- name: "Bullseye Buddy"
+  url: "https://github.com/karson94/Bullseye-Buddy"
+  description: "Led the development of a web-based dart game tracking app using Flutter and Firebase. I designed and built the core game logic, a custom interactive dartboard widget, and the full CI/CD pipeline for automated testing and deployment to Firebase."
+  tags: ["Flutter", "Dart", "Firebase", "CI/CD", "Web-App", "Game-Dev"]
+
+- name: "RiskWatch"
+  url: "https://github.com/karson94/RiskWatch-Android-App"
+  description: "An award-winning wearable fall-detection system. I led the development of the companion Android app, which features real-time vital monitoring, BLE communication, and a custom Amazon Alexa skill for multi-modal alerts. The project won 2nd place in the Grainger Innovation Prize."
+  tags: ["Android", "Java", "BLE", "IoT", "Healthcare", "Machine-Learning", "Alexa"]
