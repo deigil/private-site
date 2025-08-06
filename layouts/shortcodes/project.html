@@ -2,9 +2,16 @@
     /* General container for the project cards */
     .project-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
         gap: 20px;
         padding: 20px;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+        .project-container {
+            grid-template-columns: 1fr; /* Single column */
+        }
     }
 
     /* Individual project card styling */
@@ -42,6 +49,13 @@
         margin-right: 10px;
     }
 
+    /* Project date styling */
+    .project-date {
+        font-size: 0.9em;
+        color: var(--card-text-color);
+        margin-bottom: 15px;
+    }
+
     /* Project description styling */
     .project-description {
         font-size: 1.1em;
@@ -72,7 +86,7 @@
 </style>
 
 <div class="project-container">
-    {{ range .Site.Data.projects }}
+    {{ range sort .Site.Data.projects "date" "desc" }}
     <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="project-card">
         <div>
             <h3 class="project-name">
@@ -87,6 +101,7 @@
                 {{ end }}
                 {{ .name }}
             </h3>
+            <p class="project-date">{{ .date | time.Format "January 2006" }}</p>
             <p class="project-description">{{ .description }}</p>
         </div>
         <div class="project-tags">
