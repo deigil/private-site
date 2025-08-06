@@ -1,0 +1,19 @@
+- name: "Personal Website"
+  url: "https://github.com/deigil/private-site"
+  description: "My personal website and blog, built with Hugo and PaperMod. Showcases my projects, experience, and articles on various tech topics. It's designed to be fast, responsive, and SEO-friendly."
+  tags: ["Hugo", "Go", "PaperMod", "Frontend", "Web-Development"]
+
+- name: "Magic 8-Ball"
+  url: "https://github.com/deigil/magic_ball"
+  description: "A fun, interactive Magic 8-Ball game implemented in Python. It's a simple command-line application that demonstrates basic Python concepts and random number generation."
+  tags: ["Python", "CLI", "Game", "Fun"]
+
+- name: "HawkPhish Backend"
+  url: "https://github.com/deigil/hawkphish_backend"
+  description: "The backend service for a phishing awareness and simulation platform. It's built with Django and provides a RESTful API for managing phishing campaigns, users, and tracking results."
+  tags: ["Python", "Django", "API", "Backend", "Security"]
+
+- name: "Wi-Fi Scanner Backend"
+  url: "https://github.com/deigil/wifiscanner-backend"
+  description: "A backend service that collects and analyzes Wi-Fi network data. It's designed to identify network vulnerabilities and provide insights into Wi-Fi security."
+  tags: ["Python", "Django", "API", "Backend", "Networking"]
