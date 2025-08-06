@@ -49,6 +49,15 @@
         margin-right: 10px;
     }
 
+    /* Light and dark theme icon handling */
+    .dark .icon-dark {
+        display: none;
+    }
+
+    .light .icon-light {
+        display: none;
+    }
+
     /* Project date styling */
     .project-date {
         font-size: 0.9em;
@@ -90,14 +99,14 @@
     <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="project-card">
         <div>
             <h3 class="project-name">
-                {{ $iconPath := "" }}
                 {{ if strings.Contains .url "github.com" }}
-                    {{ $iconPath = "icons/github.svg" }}
+                    {{ $iconDark := resources.Get "icons/github.svg" }}
+                    {{ $iconLight := resources.Get "icons/github-white.svg" }}
+                    <img src="{{ $iconDark.Permalink }}" alt="GitHub" class="icon icon-dark" />
+                    <img src="{{ $iconLight.Permalink }}" alt="GitHub" class="icon icon-light" />
                 {{ else }}
-                    {{ $iconPath = "icons/link.svg" }}
-                {{ end }}
-                {{ with resources.Get $iconPath }}
-                    <img src="{{ .Permalink }}" alt="Icon" class="icon" />
+                    {{ $icon := resources.Get "icons/link.svg" }}
+                    <img src="{{ $icon.Permalink }}" alt="Link" class="icon" />
                 {{ end }}
                 {{ .name }}
             </h3>
