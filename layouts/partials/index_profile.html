@@ -23,21 +23,25 @@
                     {{- $img = $img.Resize "150x150" }}
                 {{- end }}
             {{- end }}
-            <img loading="lazy" draggable="false" src="{{ $img.Permalink }}" 
-                 alt="{{ .imageTitle | default "profile image" }}" 
-                 title="{{ .imageTitle }}"
-                 height="{{ .imageHeight | default 150 }}" 
-                 width="{{ .imageWidth | default 150 }}" />
+            <div class="profile-avatar">
+                <img loading="lazy" draggable="false" src="{{ $img.Permalink }}" 
+                    alt="{{ .imageTitle | default "profile image" }}" 
+                    title="{{ .imageTitle }}"
+                    height="{{ .imageHeight | default 150 }}" 
+                    width="{{ .imageWidth | default 150 }}" />
+            </div>
         {{- else }}
         <!-- Fallback for missing images -->
-        <img loading="lazy" draggable="false" src="{{ .imageUrl | absURL }}" 
-             alt="{{ .imageTitle | default "profile image" }}" 
-             title="{{ .imageTitle }}"
-             height="{{ .imageHeight | default 150 }}" 
-             width="{{ .imageWidth | default 150 }}" />
+        <div class="profile-avatar">
+            <img loading="lazy" draggable="false" src="{{ .imageUrl | absURL }}" 
+                alt="{{ .imageTitle | default "profile image" }}" 
+                title="{{ .imageTitle }}"
+                height="{{ .imageHeight | default 150 }}" 
+                width="{{ .imageWidth | default 150 }}" />
+        </div>
         {{- end }}
         {{- end }}
-        <h1>{{ .title | default site.Title | markdownify }}</h1>
+        <h1 class="rgb-text">{{ .title | default site.Title | markdownify }}</h1>
         <span><b>{{ .subtitle | markdownify }}</b></span>
         {{- partial "social_icons.html" -}}
 

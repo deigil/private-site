@@ -90,7 +90,7 @@ params:
   profileMode:
     enabled: true
     title: Deimantas (Dei)
-    subtitle: "👋 Welcome to my Site"
+    subtitle: "\"because rgb right :rofl:\""
     imageUrl: "/img/self.png"
     imageWidth: 170
     imageHeight: 170

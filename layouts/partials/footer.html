@@ -133,3 +133,8 @@
     });
 </script>
 {{- end }}
+
+{{ if .IsHome }}
+{{ $pac := resources.Get "js/pacman-animation.js" | js.Build | fingerprint }}
+<script src="{{ $pac.RelPermalink }}" integrity="{{ $pac.Data.Integrity }}" defer></script>
+{{ end }}
