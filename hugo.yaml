@@ -1,5 +1,5 @@
 baseURL: "/"
-title: Dei Site
+title: /home/dei-site
 pagination:
   pagerSize: 5
 theme: PaperMod
@@ -56,7 +56,7 @@ outputs:
 
 params:
   env: development  # Change from production to development to disable schema
-  author: Dei
+  author: dei
   defaultTheme: auto
   ShowReadingTime: true
   ShowShareButtons: true
@@ -89,7 +89,7 @@ params:
   # ENHANCE: Profile mode with better configuration
   profileMode:
     enabled: true
-    title: Deimantas Gilys
+    title: Deimantas (Dei)
     subtitle: "👋 Welcome to my Site"
     imageUrl: "/img/self.png"
     imageWidth: 170
