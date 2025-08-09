@@ -4,20 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!avatar) return;
 
     // --- Configuration ---
-    const orbitRadius = 95; // Distance from center of avatar (character path)
+    let orbitRadius = 95; // Distance from center of avatar (character path)
     const pacmanSpeed = 1;   // Lower is faster
+    // Even spacing behind Pac‑Man (30°, 60°, 90°) with equal speed
     const characters = [
-        { id: 'pacman', offset: 0, speed: 1, el: null },
-        { id: 'ghost-red', offset: 25, speed: 0.95, el: null },
-        { id: 'ghost-pink', offset: 45, speed: 0.85, el: null },
-        { id: 'ghost-cyan', offset: 65, speed: 0.75, el: null },
+        { id: 'pacman',    offset: 0,  speed: 1, el: null },
+        { id: 'ghost-red', offset: 30, speed: 1, el: null },
+        { id: 'ghost-pink',offset: 40, speed: 1, el: null },
+        { id: 'ghost-cyan',offset: 50, speed: 1, el: null },
     ];
     
     // --- Create and inject character elements ---
     characters.forEach(char => {
         const el = document.createElement('div');
         el.className = `orbit-character ${char.id}`;
-        // IMPORTANT: Ensure your sprites are in /static/img/pacman/
+        // sprites are in /static/img/pacman/
         el.style.backgroundImage = `url('/img/pacman/${char.id}.svg')`;
         avatar.appendChild(el);
         char.el = el;
@@ -28,19 +29,56 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Pellets (white dots) ---
     const pellets = [];
     const pelletCount = 40;
-    // Place pellets slightly ahead of Pac-Man's mouth so gobbling looks centered
-    const pelletRadius = orbitRadius - 1; // nudge outward so pellets align with Pac-Man's mouth axis
+    // Pellets ring radius (kept in sync with orbit on resize)
+    let pelletRadius = orbitRadius - 1; // nudge outward so pellets align with Pac-Man's mouth axis
     for (let i = 0; i < pelletCount; i++) {
         const pellet = document.createElement('div');
         pellet.className = 'orbit-pellet';
         const a = (360 / pelletCount) * i; // degrees
-        const rad = a * Math.PI / 180;
-        const x = pelletRadius * Math.cos(rad);
-        const y = pelletRadius * Math.sin(rad);
-        pellet.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
         avatar.appendChild(pellet);
         pellets.push({ angle: a, el: pellet });
     }
+
+    function positionPellets() {
+        pellets.forEach(p => {
+            const rad = p.angle * Math.PI / 180;
+            const x = pelletRadius * Math.cos(rad);
+            const y = pelletRadius * Math.sin(rad);
+            p.el.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+        });
+    }
+
+    function updateGeometry() {
+        const img = avatar.querySelector('img');
+        if (!img) return;
+        const imgW = img.clientWidth || parseFloat(img.getAttribute('width')) || 170;
+        const base = imgW / 2;
+        // Keep sprites ~1px away from the avatar border
+        const offset = 12;
+        orbitRadius = base + offset;
+        pelletRadius = orbitRadius - 1;
+
+        // Set CSS variables so sprites scale with image; pellets fixed size
+        const spritePac = Math.max(12, Math.round(imgW * 0.10));
+        const spriteGhost = Math.max(10, Math.round(imgW * 0.085));
+        const pelletSize = 3; // keep pellets visually consistent across sizes
+        avatar.style.setProperty('--sprite-pac', spritePac + 'px');
+        avatar.style.setProperty('--sprite-ghost', spriteGhost + 'px');
+        avatar.style.setProperty('--pellet-size', pelletSize + 'px');
+
+        positionPellets();
+    }
+
+    // Initial pellet placement and responsive geometry setup
+    positionPellets();
+    window.addEventListener('resize', updateGeometry);
+    // React to image size changes across CSS breakpoints
+    const imgEl = avatar.querySelector('img');
+    if (window.ResizeObserver && imgEl) {
+        const ro = new ResizeObserver(() => updateGeometry());
+        ro.observe(imgEl);
+    }
+    updateGeometry();
 
     // Helper: returns true if ang lies on clockwise arc from start to end
     function isOnArcCW(ang, start, end) {
@@ -82,9 +120,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const cyan = characters[3];
         const pacAngle = (angle - pac.offset * pac.speed + 360) % 360;
         const cyanAngle = (angle - cyan.offset * cyan.speed + 360) % 360;
-        // Keep hide arc centered on mouth, but extend it a bit behind the last ghost for delayed re‑appear
-        const mouthLead = 0;
-        const hideLagDeg = 20; // increase this (e.g., 45) for longer delay
+        // Hide immediately once eaten; only reappear after last ghost passes
+        const mouthLead = 5;
+        const hideLagDeg = 10; // no lag
         const pacAhead = (pacAngle + mouthLead) % 360;
         const cyanLagStart = (cyanAngle - hideLagDeg + 360) % 360;
         pellets.forEach(p => {

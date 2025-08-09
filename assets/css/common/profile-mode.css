@@ -21,6 +21,14 @@
     border-radius: 50%;
 }
 
+/* Lock avatar size; scale smoothly with viewport to avoid breakpoint jumps */
+:root { --avatar-size: clamp(170px, 24vw, 190px); }
+.profile .profile_inner .profile-avatar img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    max-width: none; /* override global img max-width */
+}
+
 .buttons {
     flex-wrap: wrap;
     max-width: 400px;
