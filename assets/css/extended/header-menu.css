@@ -1,0 +1,18 @@
+/* Bold specific header menu items: Search and Tags */
+.nav #menu a[href$="/search/"] span,
+.nav #menu a[href$="/search"] span,
+.nav #menu a[href$="/tags/"] span,
+.nav #menu a[href$="/tags"] span {
+  font-weight: 700;
+}
+
+
+/* Keep header fixed at top while scrolling */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  background: var(--theme);
+  /* box-shadow: 0 1px 0 var(--border); */
+}
+
