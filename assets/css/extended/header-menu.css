@@ -7,6 +7,34 @@
 }
 
 
+/* Search page tag section */
+.search-tags {
+  margin-top: 2rem;
+}
+.search-tags h2 {
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+}
+.search-tags .tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem .75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.search-tags .tag-list a {
+  display: inline-block;
+  padding: .25rem .6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  text-decoration: none;
+}
+.search-tags .count {
+  color: var(--secondary);
+  margin-left: .25rem;
+}
+
 /* Keep header fixed at top while scrolling */
 .header {
   position: sticky;

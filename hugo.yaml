@@ -39,9 +39,9 @@ menu:
     - name: Search
       url: /search/
       weight: 5
-    - name: Tags
-      url: /tags/
-      weight: 10
+    # - name: Tags
+    #   url: /tags/
+    #   weight: 10
 
 outputs:
   home:
