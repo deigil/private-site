@@ -1,0 +1,35 @@
+{{- /* Augment PaperMod search index to include data-driven projects and de-duplicate by permalink */ -}}
+{{- $index := slice -}}
+{{- $seen := newScratch -}}
+
+{{- /* De-duplication handled via $seen Scratch map (no inline funcs) */ -}}
+
+{{- /* Include all regular pages except search/archives or hidden */ -}}
+{{- range site.RegularPages -}}
+  {{- if and (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) -}}
+    {{- $url := .Permalink -}}
+    {{- if not ($seen.Get $url) -}}
+      {{- $seen.Set $url true -}}
+      {{- $index = $index | append (dict "title" .Title "content" .Plain "permalink" $url "summary" .Summary) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Include projects from data/projects.yaml so each project is searchable */ -}}
+{{- with site.Data.projects -}}
+  {{- range . -}}
+    {{- $title := (or .name .title) -}}
+    {{- $url := .url | default "" -}}
+    {{- $desc := .description | default "" -}}
+    {{- $tags := cond (isset . "tags") (delimit .tags " ") "" -}}
+    {{- $content := (printf "%s %s" $desc $tags) -}}
+    {{- if and $title (ne $url "") (not ($seen.Get $url)) -}}
+      {{- $seen.Set $url true -}}
+      {{- $index = $index | append (dict "title" $title "content" $content "permalink" $url "summary" $desc) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $index | jsonify -}}
+
+
