@@ -35,6 +35,14 @@
   margin-left: .25rem;
 }
 
+/* Codefold styling */
+.codefold { position: relative; margin: 1rem 0; }
+.codefold.is-collapsed pre { max-height: calc(var(--codefold-preview, 15) * 1.55em); overflow: hidden; }
+.codefold .codefold-fade { display: none; }
+.codefold.is-collapsed .codefold-fade { display:block; position:absolute; left:0; right:0; bottom:2.2rem; height:4rem; pointer-events:none; background: linear-gradient(to bottom, rgba(0,0,0,0), var(--theme)); }
+.codefold .codefold-btn { display:inline-block; margin-top:.5rem; font: inherit; padding:.35rem .6rem; border:1px solid var(--border); border-radius:.4rem; background: transparent; cursor:pointer; }
+.dark .codefold .codefold-btn { color: var(--primary); }
+
 /* Keep header fixed at top while scrolling */
 .header {
   position: sticky;
