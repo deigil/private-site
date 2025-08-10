@@ -17,7 +17,7 @@ The host is Arch Linux running Docker and Docker Compose. Each server lives in i
 
 I keep persistent world data under `./data`, mount it into the container, and let the image handle the rest (EULA, JVM flags, healthchecks, etc.). For modded packs, the CurseForge integration is a lifesaver—point it at a pack file or a list of mods and it fetches everything.
 
-Each server runs its own compose stack similiar to this one (my wolds modpack compose):
+Each server runs its own compose stack similar to this one (my wolds modpack compose):
 
 {{< codefold lang="yaml" preview="15" title="docker-compose.yml" >}}
 services:
@@ -425,7 +425,7 @@ Security is straightforward: `online-mode=true`, no RCON ports exposed publicly,
 
 ### What’s next
 
-Spinning up a new server is just copying a Compose file, picking a free host port, dropping in a small Discord bot if needed, and updating my VPS to accomodate. As friends rotate packs, I can rotate stacks without really touching the rest of the pipeline.
+Spinning up a new server is just copying a Compose file, picking a free host port, dropping in a small Discord bot if needed, and updating my VPS to accommodate. As friends rotate packs, I can rotate stacks without really touching the rest of the pipeline.
 
 If you’re curious about specifics (Compose snippets, watchdog code structure, or SRV examples), some of that stuff is already on my [GitHub](https://github.com/deigil) like the [wolds watchdog](https://github.com/deigil/mc-watchdog). Keep an eye out for more as I am constantly evolving and pushing new changes!
 
