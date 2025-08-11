@@ -4,7 +4,11 @@
         {{- if .imageUrl -}}
         {{- $img := "" }}
         {{- if not (urls.Parse .imageUrl).IsAbs }}
-            {{- $img = resources.Get .imageUrl }}
+            {{- $path := .imageUrl -}}
+            {{- if strings.HasPrefix $path "/" }}
+                {{- $path = (strings.TrimPrefix "/" $path) -}}
+            {{- end -}}
+            {{- $img = resources.Get $path -}}
         {{- end }}
         {{- if $img }}
             {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
@@ -12,19 +16,25 @@
                 {{- $processableFormats = $processableFormats | append "webp" -}}
             {{- end -}}
             {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+            {{- $img1x := $img -}}
+            {{- $img2x := false -}}
             {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
-                {{- if (not (and (not .imageHeight) (not .imageWidth))) }}
-                    {{- $img = $img.Resize (printf "%dx%d webp q85" .imageWidth .imageHeight) }}
-                {{- else if .imageHeight }}
-                    {{- $img = $img.Resize (printf "x%d" .imageHeight) }}
-                {{ else if .imageWidth }}
-                    {{- $img = $img.Resize (printf "%dx" .imageWidth) }}
-                {{ else }}
-                    {{- $img = $img.Resize "150x150" }}
-                {{- end }}
-            {{- end }}
+                {{- if (and .imageHeight .imageWidth) -}}
+                    {{- $w := .imageWidth -}}
+                    {{- $h := .imageHeight -}}
+                    {{- $img1x = $img.Resize (printf "%dx%d webp q92" $w $h) -}}
+                    {{- $img2x = $img.Resize (printf "%dx%d webp q92" (mul $w 2) (mul $h 2)) -}}
+                {{- else if .imageHeight -}}
+                    {{- $img1x = $img.Resize (printf "x%d" .imageHeight) -}}
+                {{- else if .imageWidth -}}
+                    {{- $img1x = $img.Resize (printf "%dx" .imageWidth) -}}
+                {{- else -}}
+                    {{- $img1x = $img.Resize "150x150" -}}
+                {{- end -}}
+            {{- end -}}
             <div class="profile-avatar">
-                <img loading="lazy" draggable="false" src="{{ $img.Permalink }}" 
+                <img loading="lazy" draggable="false" src="{{ $img1x.Permalink }}" 
+                    {{- if $img2x }} srcset="{{ $img1x.Permalink }} 1x, {{ $img2x.Permalink }} 2x" {{- end }}
                     alt="{{ .imageTitle | default "profile image" }}" 
                     title="{{ .imageTitle }}"
                     height="{{ .imageHeight | default 150 }}" 
