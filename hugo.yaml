@@ -82,7 +82,7 @@ params:
     favicon16x16: "img/favicon-16x16.png"
     favicon32x32: "img/favicon-32x32.png"
     apple_touch_icon: "img/apple-touch-icon.png"
-    # Will be overridden by extend_head with generated assets from `assets/img/dei_git_pic.jpg`
+    # Will be overridden by extend_head with generated assets from `assets/img/dei_git_pic.png`
 
   # ADD: Enhanced SEO features
   images: ["img/og-image.png"]
