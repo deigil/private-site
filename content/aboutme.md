@@ -23,7 +23,7 @@ I’ll be adding more details on my playing career, achievements, and clips soon
 
 ### Android and phone modding
 
-{{< figure src="/img/bootloader-moto.jpg" alt="moto bootloader" class="center-image" >}}
+{{< assetimg src="img/bootloader-moto.jpg" alt="moto bootloader" class="center-image" >}}
 
 I love messing with phones. Recently, I installed a custom ROM on my Pixel 9, rooted it, and configured SafetyNet pass. Over the years I’ve unlocked bootloaders, flashed ROMs, and tuned kernels on a bunch of devices.
 
@@ -36,7 +36,7 @@ I’ll publish a step‑by‑step blog post walking through my current Pixel set
 
 It started with an old Windows Vista laptop and a lot of curiosity. That turned into building and fixing PCs, exploring Android internals, and learning to code. I enjoy backend services, automation, and clean UX. Today I’m focused on systems work (Docker, Linux, networking), Python tooling, and web projects — and I still love “making stuff work” under pressure.
 
-{{< figure src="/img/tech-baby.png" alt="tech baby" class="center-image" >}}
+{{< assetimg src="img/tech-baby.png" alt="tech baby" class="center-image" >}}
 
 ### Where to next
 

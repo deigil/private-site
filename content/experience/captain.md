@@ -17,7 +17,7 @@ location: "Chicago, Illinois, United States · On-site"
 
 I am licensed under the United States Coast Guard "USCG 25 Ton Masters" license. I am captain of a 35ft sail boat named "harmony" 🌅 in the Monroe Harbor, Chicago. My job is to take customers out to the lake and make sure they have a good and safe time. Communication and peoples skills are very important here. One notable accomplishment is my review rate with multiple perfect reviews!
 
-{{<figure src="/img/sailing.jpg" caption="Picture I was able to take while sailing on Lake Michigan">}}
+{{< assetimg src="img/sailing.jpg" alt="Sailing on Lake Michigan" class="cert-photo" caption="Picture I was able to take while sailing on Lake Michigan" >}}
 
 **Skills:**
 

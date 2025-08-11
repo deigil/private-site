@@ -17,7 +17,7 @@ location: "Chicago, Illinois, United States"
 
 I am a security guard for a small family owned banquet hall on the south west side of Chicago called [**Sauliu Namai**](https://www.sauliu-namai.org). I actually made their website seen below with a simple google site and custom domain name server.
 
-{{<figure src="/img/banquet.png">}}
+{{< assetimg src="img/banquet.png" alt="Sauliu Namai" class="cert-photo" >}}
 
 Besides that, I had to deal with multiple interactions that unfortunately, could have gone bad. With my presence and de-escalation skills, the conflicts were peacefully resolved and no harm has ever come to the guests or myself at any event I have worked.
 

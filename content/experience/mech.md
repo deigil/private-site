@@ -17,6 +17,8 @@ location: "Chicago, Illinois, United States · On-site"
 
 Project setup and takedown. Also installed full factory camera system. Data entry, cleaning, and other miscellaneous jobs were present.
 
+{{< assetimg src="img/nord-onsite.jpg" alt="Factory work" class="cert-photo" >}}
+
 **Skills:**
 
 - Communication
