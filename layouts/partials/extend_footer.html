@@ -1,0 +1,5 @@
+{{- /* Load mouse-reactive background JS on all pages */ -}}
+{{- $bg := resources.Get "js/reactive-bg.js" | js.Build | fingerprint -}}
+<script src="{{ $bg.RelPermalink }}" integrity="{{ $bg.Data.Integrity }}" defer></script>
+
+

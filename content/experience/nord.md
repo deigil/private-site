@@ -17,7 +17,7 @@ location: "Vilnius, Vilniaus, Lithuania · On-site"
 
 During my internship, I worked with the SRE infra team, contributing to various projects for their 5000+ servers worldwide. This included web development for PROD/QA environments with Django, server management, maintaining utilized services, and working on Docker images while conducting thorough research on changelogs. Moreover, I implemented bash automation procedures and devised backup solutions for specific SQL databases to ensure data integrity and system reliability.
 
-{{<figure src="/img/nord-onsite.jpg" caption="First day Nord Security building in Vilnius, Lithuania 🇱🇹">}}
+{{< assetimg src="img/nord-onsite.jpg" alt="Nord Security HQ" class="cert-photo" caption="First day Nord Security building in Vilnius, Lithuania 🇱🇹" >}}
 
 **Skills:**
 
