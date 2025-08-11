@@ -1,8 +1,13 @@
 ---
 weight: 4
 title: 🧑‍🔧 H.B. Taylor Co.
+url: "/experience/mech/"
+slug: "mech"
 tags: ["mech e","engineer","cameras","data entry"]
 date: 2020-05-06
+position: "Mechanical Engineer"
+duration: "May 2020 - Sep 2020"
+location: "Chicago, Illinois, United States · On-site"
 ---
 # Mechanical Engineer
 

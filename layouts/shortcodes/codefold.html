@@ -1,0 +1,21 @@
+{{- /* codefold shortcode: one code box that expands inline */ -}}
+{{- $lang := (.Get "lang") | default "text" -}}
+{{- $previewStr := (.Get "preview") | default "15" -}}
+{{- $title := .Get "title" | default "code" -}}
+{{- $preview := int $previewStr -}}
+{{- $lines := split .Inner "\n" -}}
+{{- $total := len $lines -}}
+{{- $rendered := (highlight .Inner $lang "") -}}
+
+<div class="codefold" style="--codefold-preview: {{ $preview }}" data-total="{{ $total }}">
+  <div class="codefold-inner">
+    {{ $rendered | safeHTML }}
+    <div class="codefold-fade" aria-hidden="true"></div>
+  </div>
+  {{- if gt $total $preview -}}
+  <button class="codefold-btn" type="button">Show full {{ $title }} ({{ $total }} lines)</button>
+  {{- end -}}
+</div>
+<script>(function(){var root=document.currentScript.previousElementSibling;if(!root)return;var btn=root.querySelector('.codefold-btn');var collapsed=true;function sync(){if(!btn)return; if(collapsed){root.classList.add('is-collapsed');btn.textContent='Show full {{ $title }} ({{ $total }} lines)';}else{root.classList.remove('is-collapsed');btn.textContent='Hide {{ $title }}';}}if(btn){btn.addEventListener('click',function(){collapsed=!collapsed;sync();});}sync();})();</script>
+
+

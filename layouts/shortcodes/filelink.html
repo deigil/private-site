@@ -1,0 +1,12 @@
+{{- /* Usage: {{< filelink path="pdf/Masters.pdf" title="Master’s Diploma (PDF)" >}} */ -}}
+{{- $path := .Get "path" -}}
+{{- $title := .Get "title" | default $path -}}
+{{- with resources.Get $path -}}
+  <a href="{{ .RelPermalink }}" target="_blank" rel="noopener">
+    {{ $title }}
+  </a>
+{{- else -}}
+  {{- /* If resource not found, render nothing to avoid build errors */ -}}
+{{- end -}}
+
+

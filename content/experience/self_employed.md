@@ -1,8 +1,12 @@
 ---
 weight: 3
-title: 🔧 Freelance
-tags: ["freelance"]
-date: 2024-02-17
+title: 🔧 DeiTech (Self Employed)
+url: "/experience/self_employed/"
+slug: "self_employed"
+tags: ["servers","ubuntu","linux","bash","python","django","flask","docker","git","squarespace","google sites","html","css","dns","repair","networking","automation","systems management"]
+date: 2020-01-01
+Position: Freelance
+Location: Chicago, Illinois, United States · Hybrid
 ---
 # Self Employed
 
@@ -10,25 +14,27 @@ date: 2024-02-17
 - **Duration:** Jan 2020 - Present
 - **Location:** Chicago, Illinois, United States · Hybrid
 
-Self-taught and engaged with projects such as home server and network management. Software development like bash scripting, python projects (django, flask, docker), web projects (html, css, google sites, squarespace), computer repair and cleaning, etc. Currently working on making a custom resume webpage for myself 😆 Lastly, implementing everything into git for better workflow, documentation, and peer review.
+I’m a self-taught developer and systems enthusiast with hands-on experience in home server and network management. I’ve worked on a variety of software projects including Bash scripting, Python development (Django, Flask), and containerization using Docker and Docker Compose. I self-host services on a custom-built Arch/Ubuntu Linux home server, which also runs multiplayer Minecraft servers for users around the world.
 
-On the side I do computer repair and cleaning, camera system installations, network repair and improvement; as well as other odd jobs here and there.
+I’ve automated most of my infrastructure using Docker, and developed Python and Bash watchdog scripts that integrate with Discord, enabling server control and monitoring through simple chat commands. This allows for convenient, remote management and real-time interaction with hosted services.
+
+I also provide computer repair and maintenance, network diagnostics and optimization, camera system installations, and website design services for both residential and commercial clients.
+
+You can view most of my projects on the [Projects](/projects/) page.
 
 **Skills:**
 
 - Servers
-- Ubuntu
+- Ubuntu / Arch Linux
 - Linux
 - Bash
 - Python (Programming Language)
 - Django
 - Flask
-- Docker
+- Docker / Docker Compose
 - Git
-- Squarespace
-- Google Sites
-- HTML
-- Cascading Style Sheets (CSS)
+- Squarespace / Google Sites
+- HTML / CSS
 - Domain Name System (DNS)
 - Computer Repair
 - Computer Networking

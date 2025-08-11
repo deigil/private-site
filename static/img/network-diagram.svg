@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-label="Network diagram: Clients → DNS/SRV → VPS (DNAT) → WireGuard → Home Server (Docker)">
+  <defs>
+    <style>
+      .box { fill: #ffffff; stroke: #222222; stroke-width: 2; rx: 12; }
+      .label { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif; font-size: 15px; fill: #222222; }
+      .title { font-size: 17px; font-weight: 700; }
+      .sub { font-size: 13px; fill: #444; }
+      .arrow { stroke: #222222; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead); }
+      .note { font-size: 12px; fill: #444; }
+      .badge { fill: #f2f5ff; stroke: #3b5bdb; stroke-width: 1.5; rx: 8; }
+      .badgeText { font-size: 12px; fill: #1c2a5e; font-weight: 600; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#222222" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="900" height="420" fill="#ffffff" />
+
+  <!-- Clients -->
+  <rect class="box" x="30" y="50" width="160" height="80"/>
+  <text class="label title" x="110" y="80" text-anchor="middle">Clients</text>
+  <text class="label sub" x="110" y="104" text-anchor="middle">Java Edition</text>
+  <text class="label sub" x="110" y="122" text-anchor="middle">PC</text>
+
+  <!-- DNS/SRV -->
+  <rect class="box" x="230" y="50" width="170" height="80"/>
+  <text class="label title" x="315" y="80" text-anchor="middle">DNS / SRV</text>
+  <text class="label sub" x="315" y="106" text-anchor="middle">mc.example.com</text>
+
+  <!-- VPS -->
+  <rect class="box" x="430" y="40" width="200" height="100"/>
+  <text class="label title" x="530" y="70" text-anchor="middle">VPS (Public)</text>
+  <text class="label sub" x="530" y="94" text-anchor="middle">iptables DNAT + MASQ</text>
+
+  <!-- WireGuard tunnel badge between VPS and Home -->
+  <rect class="badge" x="455" y="170" width="150" height="28" rx="8"/>
+  <text class="badgeText" x="530" y="189" text-anchor="middle">WireGuard Tunnel</text>
+
+  <!-- Home Router (WG only) -->
+  <rect class="box" x="670" y="30" width="200" height="110"/>
+  <text class="label title" x="770" y="60" text-anchor="middle">Home Router</text>
+  <text class="label sub" x="770" y="84" text-anchor="middle">WG UDP only</text>
+  <text class="label sub" x="770" y="102" text-anchor="middle">No game ports</text>
+
+  <!-- Home Server -->
+  <rect class="box" x="670" y="170" width="200" height="160"/>
+  <text class="label title" x="770" y="200" text-anchor="middle">Home Server</text>
+  <text class="label sub" x="770" y="224" text-anchor="middle">Docker Compose</text>
+  <text class="label sub" x="770" y="242" text-anchor="middle">itzg/minecraft-server</text>
+  <text class="label sub" x="770" y="260" text-anchor="middle">Watchdogs / Discord</text>
+
+  <!-- Arrows -->
+  <path class="arrow" d="M190 90 H230"/>
+  <path class="arrow" d="M400 90 H430"/>
+  <path class="arrow" d="M630 90 H670"/>
+  <path class="arrow" d="M530 140 V170"/>
+  <path class="arrow" d="M770 140 V170"/>
+
+  <!-- Notes -->
+  <text class="note" x="530" y="220" text-anchor="middle">Public traffic terminates on VPS</text>
+  <text class="note" x="770" y="340" text-anchor="middle">Servers reachable only via WG</text>
+
+</svg>
+
+

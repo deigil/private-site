@@ -1,0 +1,54 @@
+/* Bold specific header menu items: Search and Tags */
+.nav #menu a[href$="/search/"] span,
+.nav #menu a[href$="/search"] span,
+.nav #menu a[href$="/tags/"] span,
+.nav #menu a[href$="/tags"] span {
+  font-weight: 700;
+}
+
+
+/* Search page tag section */
+.search-tags {
+  margin-top: 2rem;
+}
+.search-tags h2 {
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+}
+.search-tags .tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem .75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.search-tags .tag-list a {
+  display: inline-block;
+  padding: .25rem .6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  text-decoration: none;
+}
+.search-tags .count {
+  color: var(--secondary);
+  margin-left: .25rem;
+}
+
+/* Codefold styling */
+.codefold { position: relative; margin: 1rem 0; }
+.codefold.is-collapsed pre { max-height: calc(var(--codefold-preview, 15) * 1.55em); overflow: hidden; }
+.codefold .codefold-fade { display: none; }
+.codefold.is-collapsed .codefold-fade { display:block; position:absolute; left:0; right:0; bottom:2.2rem; height:4rem; pointer-events:none; background: linear-gradient(to bottom, rgba(0,0,0,0), var(--theme)); }
+.codefold .codefold-btn { display:inline-block; margin-top:.5rem; font: inherit; padding:.35rem .6rem; border:1px solid var(--border); border-radius:.4rem; background: transparent; cursor:pointer; }
+.dark .codefold .codefold-btn { color: var(--primary); }
+
+/* Keep header fixed at top while scrolling */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  background: var(--theme);
+  /* box-shadow: 0 1px 0 var(--border); */
+}
+

@@ -1,0 +1,40 @@
+/* Two-column responsive grid for experience section; no paginator */
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+@media (min-width: 900px) {
+  .experience-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Ensure entries stretch uniformly */
+.experience-grid .post-entry {
+  height: 100%;
+}
+
+.experience-grid .entry-header .xp-meta {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin-bottom: 0.25rem;
+}
+
+.experience-grid .entry-header .xp-sub {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-top: 0.15rem;
+}
+
+.page-header .resume-link {
+  margin-top: 0.25rem;
+}
+.page-header .resume-link a {
+  font-size: 0.95rem;
+  text-decoration: underline;
+}
+
+

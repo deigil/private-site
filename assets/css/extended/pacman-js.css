@@ -1,0 +1,49 @@
+.profile-avatar {
+    position: relative; /* This is the anchor for the absolute positioning */
+  }
+  
+.orbit-character {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  width: var(--sprite-pac, 18px);
+  height: var(--sprite-pac, 18px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    will-change: transform; /* Performance hint for the browser */
+  }
+
+/* Pellets (white dots) */
+.orbit-pellet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: var(--pellet-color, #fff);
+  border-radius: 50%;
+  opacity: 1;
+  transition: opacity 90ms linear;
+  z-index: 5;
+}
+
+/* Light/Dark pellet color */
+/* Default to black (light theme), switch to white in dark theme */
+:root { --pellet-color: #000; }
+.dark { --pellet-color: #fff; }
+
+/* Finer control per sprite */
+.orbit-character.pacman { width: var(--sprite-pac, 18px); height: var(--sprite-pac, 18px); }
+.orbit-character.ghost-red,
+.orbit-character.ghost-pink,
+.orbit-character.ghost-cyan { width: var(--sprite-ghost, 16px); height: var(--sprite-ghost, 16px); }
+
+/* Responsive tweaks for small screens */
+@media (max-width: 520px) {
+  .orbit-character.pacman { width: var(--sprite-pac, 14px); height: var(--sprite-pac, 14px); }
+  .orbit-character.ghost-red,
+  .orbit-character.ghost-pink,
+  .orbit-character.ghost-cyan { width: var(--sprite-ghost, 12px); height: var(--sprite-ghost, 12px); }
+  .orbit-pellet { width: var(--pellet-size, 3px); height: var(--pellet-size, 3px); }
+}

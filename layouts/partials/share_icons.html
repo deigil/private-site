@@ -35,26 +35,5 @@
         </a>
     </li>
     {{- end }}
-    {{- if (cond ($custom) (in $ShareButtons "instagram") (true)) }}
-    <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on reddit"
-            href="https://www.instagram.com/deimantasg/">
-            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
-                <path d="M391.8 512H120.2C53.9 512 0 458.1 0 391.8V120.2C0 53.9 53.9 0 120.2 0h271.6C458.1 0 512 53.9 512 120.2v271.6c0 66.3-53.9 120.2-120.2 120.2zM120.2 32C81.5 32 48 65.5 48 104.2v287.6c0 38.7 33.5 72.2 72.2 72.2h271.6c38.7 0 72.2-33.5 72.2-72.2V104.2C464 65.5 430.5 32 391.8 32H120.2z"/>
-                <path d="M256 144c-57.3 0-104 46.7-104 104s46.7 104 104 104 104-46.7 104-104-46.7-104-104-104zm0 176c-44.2 0-80-35.8-80-80s35.8-80 80-80 80 35.8 80 80-35.8 80-80 80zM400 144c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16z"/>
-            </svg>
-        </a>
-    </li>
-    {{- end }}
-    {{- if (cond ($custom) (in $ShareButtons "facebook") (true)) }}
-    <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share {{ $title | plainify }} on facebook"
-            href="https://facebook.com/deimsanic">
-            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
-                <path
-                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
-            </svg>
-        </a>
-    </li>
-    {{- end }}
+    {{- /* Removed Instagram and Facebook share buttons sitewide */ -}}
 </ul>

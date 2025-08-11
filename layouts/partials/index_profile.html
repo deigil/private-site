@@ -4,7 +4,11 @@
         {{- if .imageUrl -}}
         {{- $img := "" }}
         {{- if not (urls.Parse .imageUrl).IsAbs }}
-            {{- $img = resources.Get .imageUrl }}
+            {{- $path := .imageUrl -}}
+            {{- if strings.HasPrefix $path "/" }}
+                {{- $path = (strings.TrimPrefix "/" $path) -}}
+            {{- end -}}
+            {{- $img = resources.Get $path -}}
         {{- end }}
         {{- if $img }}
             {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
@@ -12,34 +16,53 @@
                 {{- $processableFormats = $processableFormats | append "webp" -}}
             {{- end -}}
             {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+            {{- $img1x := $img -}}
+            {{- $img2x := false -}}
             {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
-                {{- if (not (and (not .imageHeight) (not .imageWidth))) }}
-                    {{- $img = $img.Resize (printf "%dx%d" .imageWidth .imageHeight) }}
-                {{- else if .imageHeight }}
-                    {{- $img = $img.Resize (printf "x%d" .imageHeight) }}
-                {{ else if .imageWidth }}
-                    {{- $img = $img.Resize (printf "%dx" .imageWidth) }}
-                {{ else }}
-                    {{- $img = $img.Resize "150x150" }}
-                {{- end }}
-            {{- end }}
-            <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
-                height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+                {{- if (and .imageHeight .imageWidth) -}}
+                    {{- $w := .imageWidth -}}
+                    {{- $h := .imageHeight -}}
+                    {{- $img1x = $img.Resize (printf "%dx%d webp q92" $w $h) -}}
+                    {{- $img2x = $img.Resize (printf "%dx%d webp q92" (mul $w 2) (mul $h 2)) -}}
+                {{- else if .imageHeight -}}
+                    {{- $img1x = $img.Resize (printf "x%d" .imageHeight) -}}
+                {{- else if .imageWidth -}}
+                    {{- $img1x = $img.Resize (printf "%dx" .imageWidth) -}}
+                {{- else -}}
+                    {{- $img1x = $img.Resize "150x150" -}}
+                {{- end -}}
+            {{- end -}}
+            <div class="profile-avatar">
+                <img loading="lazy" draggable="false" src="{{ $img1x.Permalink }}" 
+                    {{- if $img2x }} srcset="{{ $img1x.Permalink }} 1x, {{ $img2x.Permalink }} 2x" {{- end }}
+                    alt="{{ .imageTitle | default "profile image" }}" 
+                    title="{{ .imageTitle }}"
+                    height="{{ .imageHeight | default 150 }}" 
+                    width="{{ .imageWidth | default 150 }}" />
+            </div>
         {{- else }}
-        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
-            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        <!-- Fallback for missing images -->
+        <div class="profile-avatar">
+            <img loading="lazy" draggable="false" src="{{ .imageUrl | absURL }}" 
+                alt="{{ .imageTitle | default "profile image" }}" 
+                title="{{ .imageTitle }}"
+                height="{{ .imageHeight | default 150 }}" 
+                width="{{ .imageWidth | default 150 }}" />
+        </div>
         {{- end }}
         {{- end }}
-        <h1>{{ .title | default site.Title | markdownify }}</h1>
+        <h1 class="rgb-text">{{ .title | default site.Title | markdownify }}</h1>
         <span><b>{{ .subtitle | markdownify }}</b></span>
         {{- partial "social_icons.html" -}}
+
+        
 
         {{- with .buttons }}
         <div class="buttons-container">
             <div class="buttons">
                 {{- range $index, $button := . }}
                 {{- if lt $index 2 }}
-                <a class="button" href="{{ trim $button.url " " }}" rel="noopener" title="{{ $button.name }}">
+                <a class="button" href="{{ $button.url | relLangURL }}" rel="noopener" title="{{ $button.name }}">
                     <span class="button-inner">
                         {{ $button.name }}
                         {{- if (findRE "://" $button.url) }}&nbsp;
@@ -58,7 +81,7 @@
             <div class="buttons">
                 {{- range $index, $button := . }}
                 {{- if ge $index 2 }}
-                <a class="button" href="{{ trim $button.url " " }}" rel="noopener" title="{{ $button.name }}">
+                <a class="button" href="{{ $button.url | relLangURL }}" rel="noopener" title="{{ $button.name }}">
                     <span class="button-inner">
                         {{ $button.name }}
                         {{- if (findRE "://" $button.url) }}&nbsp;

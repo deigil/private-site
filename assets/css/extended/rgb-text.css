@@ -1,0 +1,28 @@
+/* Smooth "gaming RGB" gradient text animation */
+.rgb-text {
+  background: linear-gradient(90deg,
+    #ff004c 0%,   /* red/pink */
+    #ff7a00 16%,  /* orange */
+    #ffe600 32%,  /* yellow */
+    #20ff00 48%,  /* green */
+    #00e1ff 64%,  /* cyan */
+    #2a4bff 80%,  /* blue */
+    #a100ff 100%  /* purple */
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rgb-text-shift 2s linear infinite;
+}
+
+@keyframes rgb-text-shift {
+  0% { background-position: 200% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rgb-text { animation: none; }
+}
+
+

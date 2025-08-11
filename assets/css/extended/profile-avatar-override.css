@@ -1,0 +1,13 @@
+/* Override theme breakpoint scaling on profile avatar */
+.profile .profile_inner .profile-avatar img,
+.profile .profile_inner img {
+  transform: none !important;
+}
+
+@media (min-width: 768px) {
+  .profile .profile_inner .profile-avatar img,
+  .profile .profile_inner img {
+    transform: none !important;
+  }
+}
+

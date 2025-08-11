@@ -1,0 +1,86 @@
+/* Global rainbow-on-hover effects for menu text and icon buttons */
+
+@keyframes rainbowTextShiftGlobal {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+@keyframes hueSpin {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+/* Header menu text: rainbow text only on hover */
+.header #menu a:hover span,
+.header #menu a:focus-visible span {
+  background-image: linear-gradient(
+    90deg,
+    #ff004c 0%, #ff8a00 16%, #ffd300 32%, #2bd500 48%, #00c2ff 64%, #7a00ff 80%, #ff004c 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: rainbowTextShiftGlobal 2.2s linear infinite;
+}
+
+/* Site title text: rainbow text only on hover; keep blinking cursor solid */
+.header .logo a:hover .terminal-title,
+.header .logo a:focus-visible .terminal-title {
+  background-image: linear-gradient(
+    90deg,
+    #ff004c 0%, #ff8a00 16%, #ffd300 32%, #2bd500 48%, #00c2ff 64%, #7a00ff 80%, #ff004c 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: rainbowTextShiftGlobal 2.2s linear infinite;
+}
+
+.header .logo a:hover .terminal-title .cursor,
+.header .logo a:focus-visible .terminal-title .cursor {
+  -webkit-text-fill-color: currentColor;
+  color: currentColor;
+  background: none;
+}
+
+/* Icons: social icons, share buttons, header external-link icon, theme toggle */
+.social-icons a:hover svg,
+.social-icons a:focus-visible svg,
+.share-buttons a:hover svg,
+.share-buttons a:focus-visible svg,
+.header #menu a:hover svg,
+.header #menu a:focus-visible svg,
+#theme-toggle:hover svg,
+#theme-toggle:focus-visible svg {
+  will-change: filter;
+  animation: hueSpin 2.2s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header #menu a:hover span,
+  .header #menu a:focus-visible span {
+    animation: none;
+    background-position: 100% 50%;
+  }
+  .header .logo a:hover .terminal-title,
+  .header .logo a:focus-visible .terminal-title {
+    animation: none;
+    background-position: 100% 50%;
+  }
+  .social-icons a:hover svg,
+  .social-icons a:focus-visible svg,
+  .share-buttons a:hover svg,
+  .share-buttons a:focus-visible svg,
+  .header #menu a:hover svg,
+  .header #menu a:focus-visible svg,
+  #theme-toggle:hover svg,
+  #theme-toggle:focus-visible svg {
+    animation: none;
+  }
+}
+
+

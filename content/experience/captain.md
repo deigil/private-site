@@ -1,8 +1,13 @@
 ---
 weight: 6
 title: ⛵ Sailing Chicago
+url: "/experience/captain/"
+slug: "captain"
 tags: ["sailing","lake","lake michigan","people","communication","intense","license"]
 date: 2018-04-20
+position: "Boat Captain"
+duration: "Apr 2018 - Present"
+location: "Chicago, Illinois, United States · On-site"
 ---
 # Captain
 

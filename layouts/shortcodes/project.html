@@ -1,0 +1,123 @@
+<style>
+    /* General container for the project cards */
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+        .project-container {
+            grid-template-columns: 1fr; /* Single column */
+        }
+    }
+
+    /* Individual project card styling */
+    .project-card {
+        background: var(--card-background);
+        border: 1px solid var(--card-border);
+        border-radius: 8px;
+        padding: 25px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Hover effect for the project cards */
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Project name styling */
+    .project-name {
+        font-size: 1.6em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: var(--card-text-color);
+        display: flex;
+        align-items: center;
+    }
+
+    /* Icon styling within the project name */
+    .project-name .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    /* Light and dark theme icon handling */
+    .dark .icon-dark {
+        display: none;
+    }
+
+    .light .icon-light {
+        display: none;
+    }
+
+    /* Project date styling */
+    .project-date {
+        font-size: 0.9em;
+        color: var(--card-text-color);
+        margin-bottom: 15px;
+    }
+
+    /* Project description styling */
+    .project-description {
+        font-size: 1.1em;
+        color: var(--card-text-color);
+        margin-bottom: 15px;
+        flex-grow: 1;
+    }
+
+    /* Container for project tags */
+    .project-tags {
+        margin-top: auto;
+        padding-top: 15px;
+        border-top: 1px solid var(--card-border);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    /* Individual tag styling */
+    .project-tag {
+        background-color: var(--tag-background);
+        color: var(--tag-text-color);
+        padding: 6px 12px;
+        border-radius: 15px;
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+</style>
+
+<div class="project-container">
+    {{ range sort .Site.Data.projects "date" "desc" }}
+    <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="project-card">
+        <div>
+            <h3 class="project-name">
+                {{ if strings.Contains .url "github.com" }}
+                    {{ $iconDark := resources.Get "icons/github.svg" }}
+                    {{ $iconLight := resources.Get "icons/github-white.svg" }}
+                    <img src="{{ $iconDark.Permalink }}" alt="GitHub" class="icon icon-dark" />
+                    <img src="{{ $iconLight.Permalink }}" alt="GitHub" class="icon icon-light" />
+                {{ else }}
+                    {{ $icon := resources.Get "icons/link.svg" }}
+                    <img src="{{ $icon.Permalink }}" alt="Link" class="icon" />
+                {{ end }}
+                {{ .name }}
+            </h3>
+            <p class="project-date">{{ .date | time.Format "January 2006" }}</p>
+            <p class="project-description">{{ .description }}</p>
+        </div>
+        <div class="project-tags">
+            {{ range .tags }}
+            <span class="project-tag">{{ . }}</span>
+            {{ end }}
+        </div>
+    </a>
+    {{ end }}
+</div>

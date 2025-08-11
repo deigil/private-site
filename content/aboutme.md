@@ -1,41 +1,47 @@
 ---
 title: 🌟 About Me
 layout: "kind"
-url: "/about"
+url: "/aboutme"
 summary: "about me"
 tags: ["Europe","Lithuania","ADB","Android","Rooting","Gaming","About Me","Childhood",]
 ---
 
-## A short biography
+## Hi, I’m Dei 👋
 
-Well, where should I start.. My name is **Deimantas**, A.K.A **Dei** and I am a 22 year old, born and raised in a small country in Europe. Only 3 million people live here, maybe less now 😯 but it is very beautiful, clean, and where half of my childhood was 🇱🇹.
+I’m Deimantas (Dei) — a Chicago-based engineer, coach, and tinkerer. I split my time between building systems, shipping projects, and competing in high-level volleyball. I grew up between the U.S. and Lithuania 🇱🇹, and I’m always chasing new ways to learn, optimize, and have fun while doing it.
 
-{{< youtube ujoNbwMf5iM >}}<br />
+### Volleyball
 
-The history of this country is also quite spectacular and worth looking into!
+ {{< assetimg src="img/volleyball_block.jpg" alt="me as a middle blocking" class="center-image" caption="Blocking as a middle" >}}
 
-{{< youtube HRj6QxZge9E >}}<br />
+- Currently playing semi‑pro in the VLA with South Side Xtreme Performance (SXPs)
+- Head Coach, Boys Varsity — Jones College Prep (Regional Champions, Spring 2025)
+    - This is the high school where I went to, so its amazing to be back as a coach. In 2019 I won the Chicago Public Schools City Championship and State Regional Championship here as a Junior on Varsity!
+- Previously in college NCAA D3 player, later club and captain for Rocket League Esports.
 
-But besides where I am from lets talk about how I got into the tech realm. Ever since I was young we had an old windows vista laptop I would play web games on. Now video games do not necessarily make you *techy* for lack of a better term but it was a start. 
+I’ll be adding more details on my playing career, achievements, and clips soon. If you’re into volleyball too, you’ll like what’s coming.
 
-{{< figure src="/img/tech-baby.png" alt="Support" class="center-image" >}}
+### Android and phone modding
 
-Once in America my parents decided to get me a pre-built gaming desktop and thats where things really took off. I began to dabble in the android realm and really modify my phone. I remember having an old Motorola smartphone and unlocking the boot-loader, flashing custom firmware, and overall *hacking* it. 
+{{< figure src="/img/bootloader-moto.jpg" alt="moto bootloader" class="center-image" >}}
 
-{{< figure src="/img/bootloader-moto.jpg" alt="Support" class="center-image" >}}
+I love messing with phones. Recently, I installed a custom ROM on my Pixel 9, rooted it, and configured SafetyNet pass. Over the years I’ve unlocked bootloaders, flashed ROMs, and tuned kernels on a bunch of devices.
 
-Most phones ive had since then have been modified extensively. I am on a pixel 8 right now and already unlocked [bootloader](https://source.android.com/docs/core/architecture/bootloader/locking_unlocking), flashed custom [crDroid os](https://crdroid.net/), and rooted it with [magisk](https://github.com/topjohnwu/Magisk). Click on any of those things to find out more about them! 
+- Pixel 9: custom ROM + root + SafetyNet pass
+- Past devices: Motorola (unlocked/ROM’d), multiple Pixels, iPhones, and more
 
-### Freedom = Android > iOS 😆
+I’ll publish a step‑by‑step blog post walking through my current Pixel setup (with do’s/don’ts, Magisk modules, and how I handle bank apps).
 
-{{< figure src="/img/android-iphone.png" alt="Support" class="center-image" >}}
+### How I got into tech
 
-My parents began to sign me up for coding boot-camps even before highschool due to my interest. I started to learn about programming languages and by the time I was **in** highschool, I already knew quite a bit about c++, python, and java. Fast-forward in time and I am a masters student at the [prestigious tech university here in Chicago](https://www.iit.edu/)!
+It started with an old Windows Vista laptop and a lot of curiosity. That turned into building and fixing PCs, exploring Android internals, and learning to code. I enjoy backend services, automation, and clean UX. Today I’m focused on systems work (Docker, Linux, networking), Python tooling, and web projects — and I still love “making stuff work” under pressure.
 
-{{< youtube tTwYiXANoMY >}}<br />
+{{< figure src="/img/tech-baby.png" alt="tech baby" class="center-image" >}}
 
-Click [here](/experience/school) to go to the section on my accomplishments and activities at Illinois Tech!
+### Where to next
 
-Other than that you can go through the rest of my site and see what other cool things I have done or been up to!
+- See my education and awards: [/experience/school](/experience/school)
+- Explore projects: [/projects](/projects)
+- Read the blog: [/blog](/blog)
 
-Thank you for visiting 🙏
+Thanks for stopping by 🙏

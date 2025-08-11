@@ -1,6 +1,7 @@
-baseURL: https://deiserver.dev
-title: Dei Site
-paginate: 5
+baseURL: "/"
+title: /home/dei-site
+pagination:
+  pagerSize: 5
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -11,35 +12,59 @@ buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
 
+# Fix URL handling for previews
+languageCode: en-us
+defaultContentLanguage: en
+
+# IMPORTANT: These settings fix preview URL issues
+uglyURLs: false
+canonifyURLs: false  # Don't force absolute URLs
+relativeURLs: true   # Use relative URLs for better preview compatibility
+
+# Permalink structure
+permalinks:
+  experience: "/experience/:slug/"
+  tags: "/tags/:slug/"
+
+# Section configuration
+taxonomies:
+  tag: tags
+  category: categories
+
 minify:
   disableXML: true
 
 menu:
   main:
     - name: Search
-      url: search/
+      url: /search/
       weight: 5
-    - name: Tags
-      url: tags/
-      weight: 10
+    # - name: Tags
+    #   url: /tags/
+    #   weight: 10
 
 outputs:
   home:
     - HTML
     - RSS
     - JSON
+  page:
+    - HTML
+  section:
+    - HTML
+    - RSS
 
 params:
-  env: production
-  author: Dei
-  defaultTheme: light
+  env: development  # Change from production to development to disable schema
+  author: dei
+  defaultTheme: auto
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowWordCount: true
-  ShowRssButtonInSectionTermList: false
+  ShowRssButtonInSectionTermList: true
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -48,33 +73,66 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
+
+  # ADD: New asset optimization features
+  assets:
+    disableHLJS: false
+    disableFingerprinting: false
+    favicon: "img/favicon.ico"
+    favicon16x16: "img/favicon-16x16.png"
+    favicon32x32: "img/favicon-32x32.png"
+    apple_touch_icon: "img/apple-touch-icon.png"
+    # Will be overridden by extend_head with generated assets from `assets/img/dei_git_pic.png`
+
+  # ADD: Enhanced SEO features
+  images: ["img/og-image.png"]
   
-  # profile-mode
+  # ENHANCE: Profile mode with better configuration
   profileMode:
-    enabled: true # needs to be explicitly set
-    title: Deimantas Gilys
-    subtitle: "👋 Welcome to my Site"
-    imageUrl: "img/self.png"
+    enabled: true
+    title: Deimantas (Dei)
+    subtitle: "\"because rgb right :rofl:\""
+    imageUrl: "/img/self.webp"
     imageWidth: 170
     imageHeight: 170
-    imageTitle: my image
+    imageTitle: "Deimantas Gilys Profile"
     buttons:
       - name: About Me
-        url: about
-      - name: Projects
-        url: projects
+        url: "/aboutme/"
       - name: Resume
-        url: experience
+        url: "/experience/"
+      - name: Projects
+        url: "/projects/"
+      - name: Blog
+        url: "/blog/"
+
+  # ADD: Enhanced search configuration
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10
+    keys: ["title", "permalink", "summary", "content"]
+
+  # ADD: Cover image configuration
+  cover:
+    linkFullImages: true
+    responsiveImages: true
+
+  # ADD: Edit post functionality
+  editPost:
+    URL: "https://github.com/deigil/private-site/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
 
   socialIcons:
     - name: linkedin
       url: "https://www.linkedin.com/in/dei-gil/"
     - name: github
       url: "https://github.com/deigil"
-    - name: facebook
-      url: "https://facebook.com/deimsanic"
-    - name: instagram
-      url: "https://www.instagram.com/deimantasg/"
 
 markup:
   goldmark:
@@ -82,3 +140,8 @@ markup:
       unsafe: true
   highlight:
     noClasses: false
+    anchorLineNos: true
+    codeFines: true
+    guessSyntax: true
+    lineNos: true
+    style: "github-dark"
