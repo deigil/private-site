@@ -1,0 +1,56 @@
+{{- define "main" }}
+
+{{- if not .IsHome | and .Title }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description | markdownify }}</div>
+  {{- end }}
+  {{- /* Resume PDF link under the title */ -}}
+  {{- $href := "" -}}
+  {{- with site.Params.resumePDF }}{{ $href = . }}{{ end }}
+  {{- if eq $href "" -}}
+    {{- with resources.Get "pdf/resume.pdf" }}{{ $href = .RelPermalink }}{{ end -}}
+  {{- end -}}
+  {{- if ne $href "" }}
+  <div class="resume-link"><a href="{{ $href }}" target="_blank" rel="noopener">Download Resume (PDF)</a></div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{- $pages := .RegularPages.ByDate.Reverse }}
+
+<div class="experience-grid">
+  {{- range $pages }}
+  {{- $position := .Params.position -}}
+  {{- $location := .Params.location -}}
+  {{- $duration := .Params.duration | default (time.Format "Jan 2006" .Date) -}}
+  <article class="post-entry">
+    <header class="entry-header">
+      <div class="xp-meta">{{ $duration }}</div>
+      <h2 class="entry-hint-parent">{{ .Title }}</h2>
+      {{- if or $position $location }}
+      <div class="xp-sub">
+        {{- if $position }}{{ $position }}{{ end -}}
+        {{- if and $position $location }} — {{ end -}}
+        {{- if $location }}{{ $location }}{{ end -}}
+      </div>
+      {{- end }}
+    </header>
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{- end }}
+</div>
+
+{{- end }}
+
+

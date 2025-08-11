@@ -5,6 +5,9 @@ url: "/experience/nord/"
 slug: "nord"
 tags: ["nord", "django","LT","Lithuania","mysql","database","web","web design","python","docker","bash","cron","systemd","security","automation","site reliability engineer","qos","servers"]
 date: 2023-05-12
+position: "Site Reliability Engineer"
+duration: "May 2023 - Jul 2023"
+location: "Vilnius, Vilniaus, Lithuania · On-site"
 ---
 # Site Reliability Engineer
 

@@ -5,6 +5,9 @@ url: "/experience/tender/"
 slug: "tender"
 tags: ["tender", "waiter", "bus boy", "boat","POS","windows server"]
 date: 2020-05-10
+position: "Tender Driver"
+duration: "May 2020 - Jan 2021"
+location: "Chicago, Illinois, United States · On-site"
 ---
 # Tender Driver
 

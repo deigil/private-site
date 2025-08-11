@@ -5,6 +5,9 @@ url: "/experience/office-admin/"
 slug: "office-admin"
 tags: ["office", "admin", "kids","events","tech","lead"]
 date: 2018-04-04
+position: "Office Administrator"
+duration: "Apr 2018 - May 2020"
+location: "Chicago, Illinois, United States · On-site"
 ---
 # Office Administrator
 
