@@ -1,0 +1,37 @@
+.post-entry,
+.first-entry,
+.tag-entry {
+  position: relative;
+}
+
+.entry-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.entry-badge-text {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  backdrop-filter: saturate(120%) blur(6px);
+}
+
+/* Theme-aware colors leveraging PaperMod css variables */
+html.dark .entry-badge-text {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+html:not(.dark) .entry-badge-text {
+  background: rgba(0, 0, 0, 0.06);
+  color: #222;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+
