@@ -23,7 +23,7 @@ This write‑up is what I did on my Pixel 9. It also applies to Pixel 9 Pro / 9 
 - Platform‑tools (ADB/Fastboot): [Android SDK Platform‑Tools](https://developer.android.com/tools/releases/platform-tools)
 - Archive extractor: [7‑Zip](https://www.7-zip.org/) (or your favorite)
 - ROM: Pixel specific downloads [crDroid]([https://crdroid.net/downloads])
-- crDroid specific images for Recovery. Find these on your devices download page via **Recovery** (get `init_boot.img`, `vendor_boot`, `vendor_kernel_boot`, `dtbo`, and `boot`)
+- crDroid specific images for Recovery. Find these on your devices [download](https://crdroid.net/downloads) page (get `init_boot.img`, `vendor_boot`, `vendor_kernel_boot`, `dtbo`, and `boot`)
 - crDroid specific [GAPPS](https://nikgapps.com/crdroid-official)
 
 ### Enable Developer options and prep the phone
@@ -99,7 +99,7 @@ You can stop here if you don't want to root and possibly lose safety net for wal
 3. Install the apk, open, and select Install where it says Magisk.
 4. Select and patch a file. Choose the `init_boot` file.
 5. It will patch it and save the file to `Downloads` folder.
-6. Move over this file back to the computer. Unlock Devloper settings and enable USB Debugging on phone.
+6. Move over this file back to the computer. Unlock Developer settings and enable USB Debugging on phone.
 7. Run `adb devices`, accept the RSA, and run `adb reboot bootloader`
 8. Then run `fastboot flash init_boot magisk_patched-<random>.img` and reboot back to system.
 
@@ -109,15 +109,16 @@ Continue to the next section to learn how to pass integrity so that bank apps an
 
 ### Pass Play Integrity (SafetyNet)
 
-In Magisk:
+1. In magisk > settings: enable Zygisk
+2. Then click Configure DenyList: add banking apps, Google Play, Google Services, Google Wallet. 
+3. Download on your phone via browser [NeoZygisk](https://github.com/JingMatrix/NeoZygisk), [Play Integrity Fork](https://github.com/osm0sis/PlayIntegrityFork), [Tricky Store](https://github.com/5ec1cff/TrickyStore), and [Zygisk Assistant](https://github.com/snake-4/Zygisk-Assistant).
+4. Go into magisk, modules, install from storage, and select NeoZygisk, then ZygiskAssistant. Reboot.
+5. Go back into magisk and do the same for the other two modules. Reboot.
+6. Install [WebUIX](https://github.com/MMRLApp/WebUI-X-Portable). It is an apk so just click it and install it.
+7. Open WebUIX, confirm any requirmenents first. Then select Tricky Store by clicking on its card in Modules. Then at the top right, select the hamburger, press `Select All`, then `Deselect Unnecessary` and then bottom press save. 
+8. Again, go to the hamburger menu, click on `Set Valid Keybox`, then `Set Security Patch` and `Get Security Path Date` and save again.
 
-1. Settings: enable Zygisk
-2. Configure DenyList: add banking apps, Google Play, Google Services, Google Wallet. 
-3. 
-4. Reboot, then clear data for Play Store and Services
-5. Verify with a checker app: [Integrity/SafetyNet checker]([link-to-checker-app])
-
-If you still fail, ensure your ROM’s fingerprint is proper or add a props/spoofing solution per your ROM community guidance.
+Reboot and you should have device integrity passed successfully. You can check with the Play Store app [Play Integrity API Checker](https://play.google.com/store/apps/details?id=gr.nikolasspyr.integritycheck&hl=en_US&pli=1).
 
 ### Troubleshooting quick hits
 
@@ -125,7 +126,15 @@ If you still fail, ensure your ROM’s fingerprint is proper or add a props/spoo
 - `adb sideload` fails at 47%: that’s normal for some recoveries; check the device screen for success/failure
 - Boot loops after flashing: re‑flash matching images for your current build; confirm you used the correct `init_boot.img`
 - Bank app still detects root: trim your DenyList and avoid exposing root to those apps; reboot after each change
+- **A lot of the links to the repos have important info and steps that can be followed too. Read those!**
 
-I’ll keep this post updated with modules I like, my ROM tweaks, and any gotchas on the Pixel 9.
+### Modules and Root Apps
+
+1. [AdAway](https://adaway.org/) For system wide ad blocker. Might need to allow some hosts through depending on what is blocked. You can do this by following this [guide](https://github.com/AdAway/AdAway/wiki/ProblematicApps).
+2. [ReVanced Manager](https://github.com/ReVanced/revanced-manager) Can patch certain apps to allow certain services that otherwise would be paid or not allowed.
+3. [Zygisk Detach](https://github.com/j-hc/zygisk-detach) Pairs well with the patcher to block certain apps from not auto updating via Play Store.
+4. [Live Boot](https://github.com/symbuzzer/livebootmodule) Cool and faster boot-up animation, terminal style.
+
+And thats about it for now. CrDroid itself has a lot of cool settings and tweaks you can mess with. I will most likely add a comment section to these blog posts soon, for now reach out to me via LinkedIn or GitHub if you have any issues with any of this info!
 
 
