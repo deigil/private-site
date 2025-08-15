@@ -103,7 +103,7 @@ You can stop here if you don't want to root and possibly lose safety net for wal
 7. Run `adb devices`, accept the RSA, and run `adb reboot bootloader`
 8. Then run `fastboot flash init_boot magisk_patched-<random>.img` and reboot back to system.
 
-Once the phone reboots, go back into Magisk, and you should see that it is now rooted. I will not go into much detail about what you can do with a rooted device, but lets just say it opens a lot of doors.
+Once the phone reboots, go back into Magisk, and you should see that it is now rooted.
 
 Continue to the next section to learn how to pass integrity so that bank apps and your wallet work properly.
 
@@ -112,7 +112,7 @@ Continue to the next section to learn how to pass integrity so that bank apps an
 In Magisk:
 
 1. Settings: enable Zygisk
-2. Configure DenyList: add banking apps and Google Play Services/Store
+2. Configure DenyList: add banking apps, Google Play, Google Services, Google Wallet. 
 3. 
 4. Reboot, then clear data for Play Store and Services
 5. Verify with a checker app: [Integrity/SafetyNet checker]([link-to-checker-app])

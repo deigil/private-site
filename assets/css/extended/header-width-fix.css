@@ -1,0 +1,23 @@
+/* Fix header width on larger screens so title goes left and icons go right */
+.nav {
+    max-width: none;
+    margin-inline-start: var(--gap);
+    margin-inline-end: var(--gap);
+    width: calc(100% - 2 * var(--gap));
+}
+
+/* Ensure proper spacing for logo and menu on wider screens */
+.logo,
+#menu {
+    margin: auto 0;
+}
+
+/* Logo should align to the left */
+.logo {
+    margin-left: 0;
+}
+
+/* Menu should align to the right */
+#menu {
+    margin-right: 0;
+}
