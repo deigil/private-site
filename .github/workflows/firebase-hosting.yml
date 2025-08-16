@@ -57,7 +57,7 @@ jobs:
           extended: true
 
       - name: Set Hugo Environment to Production
-        run: sed -i 's/env: development/env: production/' hugo.yaml
+        run: "sed -i 's/env: development/env: production/' hugo.yaml"
 
       - name: Build for Production
         run: hugo --gc --minify -b "https://deiserver.dev"
