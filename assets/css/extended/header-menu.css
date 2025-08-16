@@ -45,10 +45,31 @@
 
 /* Keep header fixed at top while scrolling */
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 2000;
-  background: var(--theme);
-  /* box-shadow: 0 1px 0 var(--border); */
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 2000 !important;
+  background: var(--theme) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-bottom: 1px solid var(--border) !important;
+  transition: all 0.2s ease !important;
+}
+
+/* Ensure proper spacing for content below sticky header */
+body {
+  padding-top: 0 !important;
+}
+
+/* Add subtle shadow when scrolled */
+.header.scrolled {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Clean header for home page with profile mode - no background, backdrop, or border */
+body:has(.profile) .header {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: none !important;
 }
 
