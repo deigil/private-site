@@ -4,16 +4,16 @@
   tags: ["Hugo", "Go", "PaperMod", "Frontend", "Web-Development"]
   date: "2025-08-05"
 
-- name: "Magic 8-Ball"
+- name: "Magic Ball"
   url: "https://github.com/deigil/magic_ball"
-  description: "A fun, interactive Magic 8-Ball game implemented in Python. It's a simple command-line application that demonstrates basic Python concepts and random number generation."
-  tags: ["Python", "CLI", "Game", "Fun"]
+  description: "This is a Raspberry Pi project designed to enhance learning and reading experiences for kids. This project utilizes a camera to capture images, converts the text in the image to speech, and outputs the result to both the console and speakers."
+  tags: ["Python", "CLI", "Game", "Fun", "Raspberry Pi", "Camera", "Speech", "Reading"]
   date: "2023-08-01"
 
 - name: "HawkPhish Backend"
   url: "https://github.com/deigil/hawkphish_backend"
   description: "The backend service for a phishing awareness and simulation platform. It's built with Django and provides a RESTful API for managing phishing campaigns, users, and tracking results."
-  tags: ["Python", "Django", "API", "Backend", "Security"]
+  tags: ["Python", "Django", "API", "Backend", "Security", "RESTful API", "Phishing"]
   date: "2023-01-01"
 
 - name: "Wi-Fi Scanner Backend"
