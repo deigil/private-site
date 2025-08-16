@@ -7,10 +7,8 @@ cover:
     image: "img/projects-banner.png"
     alt: "My Projects"
     relative: false
-ShowToc: true
+ShowToc: false
 ---
-
-## 🚀 My Projects
 
 Welcome to my projects page! Here you'll find a curated list of the projects I'm most proud of. I'm passionate about building things that are not only functional but also well-designed and enjoyable to use. My interests are broad and include everything from web development and backend systems to automation and data science.
 

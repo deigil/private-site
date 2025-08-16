@@ -1,7 +1,7 @@
 ---
 title: Pixel 9 custom ROM + root + Play Integrity pass
 date: 2025-08-13T00:00:00Z
-draft: true
+draft: false
 summary: Unlocking the bootloader, installing a custom ROM (crDroid), rooting with Magisk, and passing Play Integrity on a Pixel 9 running Android 15.
 tags: [Android, Pixel 9, Root, Magisk, crDroid, Play Integrity, SafetyNet]
 ---

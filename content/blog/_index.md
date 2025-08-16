@@ -1,5 +1,5 @@
 ---
-title: "Blog"
+title: "✒️ Blog"
 url: "/blog/"
 summary: "Articles and notes"
 cascade:

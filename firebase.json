@@ -46,6 +46,10 @@
       {
         "source": "/tags",
         "destination": "/tags/index.html"
+      },
+      {
+        "source": "/blog",
+        "destination": "/blog/index.html"
       }
     ],
     "cleanUrls": true,

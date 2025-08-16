@@ -55,7 +55,7 @@ outputs:
     - RSS
 
 params:
-  env: development  # Change from production to development to disable schema
+  env: development
   author: dei
   defaultTheme: auto
   ShowReadingTime: true
