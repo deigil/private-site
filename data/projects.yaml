@@ -14,7 +14,7 @@
   url: "https://github.com/deigil/hawkphish_backend"
   description: "The backend service for a phishing awareness and simulation platform. It's built with Django and provides a RESTful API for managing phishing campaigns, users, and tracking results."
   tags: ["Python", "Django", "API", "Backend", "Security", "RESTful API", "Phishing"]
-  date: "2023-01-01"
+  date: "2024-01-01"
 
 - name: "Wi-Fi Scanner Backend"
   url: "https://github.com/deigil/wifiscanner-backend"
