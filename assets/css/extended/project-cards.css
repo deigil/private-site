@@ -1,0 +1,188 @@
+/* General container for the project cards */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: 1fr; /* Single column */
+    }
+}
+
+/* Individual project card styling */
+.project-card {
+    background: var(--card-background);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+/* Featured project card styling */
+.project-card.featured {
+    background: linear-gradient(135deg, #fef7e0, #faf3d0);
+    border: 2px solid #b8860b;
+    box-shadow: 0 4px 20px rgba(184, 134, 11, 0.3);
+    overflow: hidden;
+}
+
+.dark .project-card.featured {
+    background: linear-gradient(135deg, #2a2a1a, #1f1f0f);
+    border: 2px solid #d4af37;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Featured project name with golden accent */
+.project-card.featured .project-name {
+    color: #b8860b;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 800;
+}
+
+.dark .project-card.featured .project-name {
+    color: #f7dc6f;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 800;
+}
+
+/* Hover effect for the project cards */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Enhanced hover for featured projects */
+.project-card.featured:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(184, 134, 11, 0.4);
+}
+
+.dark .project-card.featured:hover {
+    box-shadow: 0 12px 25px rgba(212, 175, 55, 0.4);
+}
+
+/* Project name styling */
+.project-name {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--card-text-color);
+    display: flex;
+    align-items: center;
+}
+
+/* Icon styling within the project name */
+.project-name .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Emoji icon styling */
+.project-name .emoji-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+/* Light and dark theme icon handling */
+.dark .icon-light {
+    display: none;
+}
+
+:not(.dark) .icon-dark {
+    display: inline-block;
+}
+
+:not(.dark) .icon-light {
+    display: none;
+}
+
+.dark .icon-dark {
+    display: none;
+}
+
+.dark .icon-light {
+    display: inline-block;
+}
+
+/* Project date styling */
+.project-date {
+    font-size: 0.9em;
+    color: var(--card-text-color);
+    margin-bottom: 15px;
+}
+
+/* Project description styling */
+.project-description {
+    font-size: 1.1em;
+    color: var(--card-text-color);
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+/* Container for project tags */
+.project-tags {
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid var(--card-border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Individual tag styling */
+.project-tag {
+    background-color: var(--tag-background);
+    color: var(--tag-text-color);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* Featured project tags with golden accent */
+.project-card.featured .project-tag {
+    background-color: rgba(184, 134, 11, 0.15);
+    border: 1px solid rgba(184, 134, 11, 0.4);
+    color: #b8860b;
+    font-weight: 600;
+}
+
+.dark .project-card.featured .project-tag {
+    background-color: rgba(247, 220, 111, 0.1);
+    border: 1px solid rgba(247, 220, 111, 0.3);
+    color: #f7dc6f;
+    font-weight: 600;
+}
+
+/* External link indicator - outward pointing arrow */
+.project-external::after {
+    content: "↗";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 0.9em;
+    opacity: 0.6;
+}
+
+/* Internal link indicator - inward pointing arrow */
+.project-internal::after {
+    content: "↙";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 0.9em;
+    opacity: 0.6;
+}

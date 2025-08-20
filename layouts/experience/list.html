@@ -7,15 +7,7 @@
   {{- if .Description }}
   <div class="post-description">{{ .Description | markdownify }}</div>
   {{- end }}
-  {{- /* Resume PDF link under the title */ -}}
-  {{- $href := "" -}}
-  {{- with site.Params.resumePDF }}{{ $href = . }}{{ end }}
-  {{- if eq $href "" -}}
-    {{- with resources.Get "pdf/resume.pdf" }}{{ $href = .RelPermalink }}{{ end -}}
-  {{- end -}}
-  {{- if ne $href "" }}
-  <div class="resume-link"><a href="{{ $href }}" target="_blank" rel="noopener">Download Resume (PDF)</a></div>
-  {{- end }}
+
 </header>
 {{- end }}
 

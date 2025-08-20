@@ -47,7 +47,11 @@
   date: "2025-08-01"
 
 - name: "RiskWatch"
-  url: "https://github.com/karson94/RiskWatch-Android-App"
+  url: "/projects/riskwatch/"
+  github: "https://github.com/karson94/RiskWatch-Android-App"
+  icon: "github"
   description: "An award-winning wearable fall-detection system. I led the development of the companion Android app, which features real-time vital monitoring, BLE communication, and a custom Amazon Alexa skill for multi-modal alerts. The project won 2nd place in the Grainger Innovation Prize."
   tags: ["Android", "Java", "BLE", "IoT", "Healthcare", "Machine-Learning", "Alexa"]
   date: "2025-06-01"
+  internal: true
+  featured: true

@@ -1,12 +1,7 @@
 ---
 title: "📈 Projects"
 tags: ["Projects", "Git", "Website", "Django", "Database", "SQL", "Python", "OCR", "TTS"]
-url: "/projects"
 summary: "A showcase of my major projects, from web development to automation scripts."
-cover:
-    image: "img/projects-banner.png"
-    alt: "My Projects"
-    relative: false
 ShowToc: false
 ---
 
@@ -20,10 +15,10 @@ Below, you'll find a mix of personal projects, open-source contributions, and pr
 
 Here are some of the technologies I'm proficient in:
 
--   **Languages:** Python, Go, C++, JavaScript
+-   **Languages:** Python, Go, C++, JavaScript, HTML, CSS, Java
 -   **Frameworks:** Django, Flask, Hugo
 -   **Databases:** PostgreSQL, MySQL, SQLite, MongoDB
--   **Tools & Platforms:** Docker, Git, AWS, Nginx
+-   **Tools & Platforms:** Docker, Git, AWS, Nginx, Firebase
 -   **Other:** REST APIs, Web Scraping, CI/CD, Agile Methodologies
 
 I'm always learning and exploring new technologies. If you have any questions about my projects or skills, feel free to reach out!

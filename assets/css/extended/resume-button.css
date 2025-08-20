@@ -1,0 +1,139 @@
+/* Resume button container */
+.resume-button-container {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Resume button styling */
+.resume-button-link {
+    background: linear-gradient(135deg, #fefcf3 0%, #f8f4e6 100%);
+    border: 2px solid #e6d7a3;
+    border-radius: 10px;
+    padding: 16px 24px;
+    text-decoration: none;
+    color: #8b6914;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(184, 134, 11, 0.15);
+    display: inline-block;
+    min-width: 260px;
+    max-width: 320px;
+}
+
+.resume-button-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(184, 134, 11, 0.25);
+    text-decoration: none;
+    color: #6b4e0a;
+    background: linear-gradient(135deg, #faf6e8 0%, #f0e6c7 100%);
+    border-color: #d4af37;
+}
+
+.resume-button-link:active {
+    transform: translateY(-1px);
+}
+
+/* Resume button content layout */
+.resume-button-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Resume icon */
+.resume-icon {
+    font-size: 1.6em;
+    flex-shrink: 0;
+}
+
+/* Resume text container */
+.resume-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: left;
+}
+
+/* Resume title */
+.resume-title {
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+/* Resume subtitle */
+.resume-subtitle {
+    font-size: 0.85em;
+    opacity: 0.8;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* Resume arrow */
+.resume-arrow {
+    font-size: 1.1em;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.resume-button-link:hover .resume-arrow {
+    transform: translateX(5px);
+}
+
+/* Dark theme adjustments */
+.dark .resume-button-link {
+    background: linear-gradient(135deg, #f7dc6f 0%, #d4af37 100%);
+    border: 2px solid #d4af37;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    color: #1a1a1a;
+}
+
+.dark .resume-button-link:hover {
+    background: linear-gradient(135deg, #fff2b3 0%, #f7dc6f 100%);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+    color: #1a1a1a;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .resume-button-link {
+        min-width: 240px;
+        padding: 14px 20px;
+    }
+    
+    .resume-title {
+        font-size: 1.05em;
+    }
+    
+    .resume-subtitle {
+        font-size: 0.8em;
+    }
+    
+    .resume-icon {
+        font-size: 1.5em;
+    }
+    
+    .resume-button-content {
+        gap: 12px;
+    }
+}
+
+/* Alternative color scheme option - professional blue */
+.resume-button-professional .resume-button-link {
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+}
+
+.resume-button-professional .resume-button-link:hover {
+    box-shadow: 0 8px 25px rgba(33, 150, 243, 0.4);
+}
+
+.dark .resume-button-professional .resume-button-link {
+    background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
+    box-shadow: 0 4px 15px rgba(25, 118, 210, 0.3);
+}
+
+.dark .resume-button-professional .resume-button-link:hover {
+    box-shadow: 0 8px 25px rgba(25, 118, 210, 0.4);
+}
