@@ -1,0 +1,19 @@
+{{- $href := "" -}}
+{{- with site.Params.resumePDF }}{{ $href = . }}{{ end }}
+{{- if eq $href "" -}}
+  {{- with resources.Get "pdf/resume.pdf" }}{{ $href = .RelPermalink }}{{ end -}}
+{{- end -}}
+{{- if ne $href "" }}
+<div class="resume-button-container">
+  <a href="{{ $href }}" target="_blank" rel="noopener" class="resume-button-link">
+    <div class="resume-button-content">
+      <span class="resume-icon">📄</span>
+      <div class="resume-text">
+        <span class="resume-title">Download Resume</span>
+        <span class="resume-subtitle">Currently Updated (PDF)</span>
+      </div>
+      <span class="resume-arrow">→</span>
+    </div>
+  </a>
+</div>
+{{- end }}
