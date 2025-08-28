@@ -23,8 +23,6 @@ But college wasn't just about hitting the books. I jumped into volleyball right 
 
 Looking back, undergrad taught me that engineering isn't just about the technical stuff - it's about solving real problems for real people, and that sometimes the best solutions come from the most unexpected collaborations.
 
-{{< assetimg src="img/jones-volleyball-team.jpeg" alt="IIT Volleyball Team" class="center-image" caption="NCAA D3 Volleyball - my first year at IIT" >}}
-
 - **Technical Skills:**
   - C/C++ Programming
   - MIPS Assembly
