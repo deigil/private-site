@@ -1,24 +1,21 @@
 ---
-weight: 3
+weight: 6
 title: 🔧 DeiTech (Self Employed)
 url: "/experience/self_employed/"
 slug: "self_employed"
 tags: ["servers","ubuntu","linux","bash","python","django","flask","docker","git","squarespace","google sites","html","css","dns","repair","networking","automation","systems management"]
 date: 2020-01-01
-Position: Freelance
-Location: Chicago, Illinois, United States · Hybrid
+position: "Freelance Developer & Systems Administrator"
+duration: "Jan 2020 - Present"
+location: "Chicago, Illinois, United States · Hybrid"
 ---
-# Self Employed
+# Freelance Developer & Systems Administrator
 
-- **Type:** Freelance
-- **Duration:** Jan 2020 - Present
-- **Location:** Chicago, Illinois, United States · Hybrid
+Being self-employed as a developer and sysadmin has been a wild ride. I've taught myself everything through trial and error, late nights debugging, and plenty of "what the heck is going on here" moments. My home server setup is basically my digital playground - running on Arch Linux with some Ubuntu bits, it's hosting Minecraft servers that people play on from all over the world, plus a bunch of other services I've tinkered with.
 
-I’m a self-taught developer and systems enthusiast with hands-on experience in home server and network management. I’ve worked on a variety of software projects including Bash scripting, Python development (Django, Flask), and containerization using Docker and Docker Compose. I self-host services on a custom-built Arch/Ubuntu Linux home server, which also runs multiplayer Minecraft servers for users around the world.
+I've built all sorts of automation scripts in Bash and Python to make my life easier, created websites using Django and Flask, and gotten really good at Docker for containerizing everything. The coolest part is my Discord-integrated monitoring system - I can check server status and restart services just by chatting in a Discord channel. Super handy when you're troubleshooting at 2 AM!
 
-I’ve automated most of my infrastructure using Docker, and developed Python and Bash watchdog scripts that integrate with Discord, enabling server control and monitoring through simple chat commands. This allows for convenient, remote management and real-time interaction with hosted services.
-
-I also provide computer repair and maintenance, network diagnostics and optimization, camera system installations, and website design services for both residential and commercial clients.
+Beyond the technical stuff, I also do computer repairs, network setup, camera installations, and website design for local clients. It's kept me busy and taught me that every client has a different "computer problem" that's usually not actually about computers.
 
 You can view most of my projects on the [Projects](/projects/) page.
 
@@ -40,4 +37,6 @@ You can view most of my projects on the [Projects](/projects/) page.
 - Computer Networking
 - Automation
 - Systems Management
+
+{{< assetimg src="img/discord-bot-example.png" alt="Automation and server management" class="center-image" caption="Custom Discord bot for server automation and monitoring" >}}
 - Managed Servers

@@ -1,5 +1,5 @@
 ---
-weight: 2
+weight: 4
 title: 🇱🇹 Bring Together Lithuania
 url: "/experience/blt/"
 slug: "blt"
@@ -17,6 +17,6 @@ I completed the Bring Together Lithuania summer program, which included an inter
 
 **Certificate:** {{< filelink path="pdf/BLT_certificate.pdf" title="Certificate of Completion (PDF)" >}}
 
-{{< assetimg src="img/president_2.jpg" alt="Meeting with Lithuanian leadership" class="cert-photo" caption="Meeting with the President and First Lady" >}}
+{{< assetimg src="img/president_2.jpg" alt="Meeting with Lithuanian leadership" class="center-image" caption="Meeting with the President and First Lady" >}}
 
 

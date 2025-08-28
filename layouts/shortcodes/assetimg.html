@@ -5,7 +5,7 @@
 {{- $caption := .Get "caption" -}}
 {{- with resources.Get $src -}}
   {{- if $caption -}}
-  <figure class="cert-figure">
+  <figure class="cert-figure {{- if eq $class "center-image" }} center-image{{- end }}">
     <img src="{{ .RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}" loading="lazy"/>
     <figcaption>{{ $caption }}</figcaption>
   </figure>
