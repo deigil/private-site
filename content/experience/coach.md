@@ -1,5 +1,5 @@
 ---
-weight: 0
+weight: 1
 title: 🏐 Chicago Public Schools
 url: "/experience/coach/"
 slug: "coach"
@@ -11,11 +11,11 @@ location: "Chicago, Illinois, United States · On-site"
 ---
 # Head Volleyball Coach
 
-- **Organization:** Chicago Public Schools · Part-time
-- **Duration:** Oct 2024 - Present
-- **Location:** Chicago, Illinois, United States · On-site
+Getting back to Jones College Prep as Head Coach for the Boys Varsity Volleyball team has been pretty surreal - I used to play here back in high school and won championships as a player. This season we took home the Regional Championship title, which felt incredible since it was my first year coaching varsity.
 
-As the Head Coach of the Boys Varsity Volleyball team at Jones College Prep in downtown Chicago, I led the team to a Regional Championship title in my first season (Spring 2025). Drawing on my own playing experience at the collegiate and semi-professional levels, I focus on developing players both individually and as a team. I design and run customized, high-intensity drills tailored to each athlete’s needs, and provide consistent one-on-one feedback to promote growth, discipline, and competitive performance. My coaching philosophy emphasizes technical development, mental resilience, and accountability both on and off the court.
+{{< assetimg src="img/jones-volleyball-team.jpeg" alt="Jones College Prep Volleyball Team" class="center-image" caption="Me and my team" >}}
+
+I try to bring what I learned from my own playing days (college D3 and semi-pro) into practice. We spend a lot of time on fundamentals and mental toughness - I want these kids to understand that volleyball isn't just about the physical game, it's about building character and learning to push through tough moments. Each player gets personalized attention during our one-on-one sessions, and watching them grow both as athletes and people makes every practice worth it.
 
 **Skills:**
 
@@ -30,8 +30,6 @@ As the Head Coach of the Boys Varsity Volleyball team at Jones College Prep in d
 - Program Evaluation
 - Conflict Resolution
 
-{{< assetimg src="img/jones-volleyball-team.jpeg" alt="Jones College Prep Volleyball Team" class="cert-photo" caption="Me and my team" >}}
-
-{{< assetimg src="img/regional-trophy.jpg" alt="Regional Championship Trophy" class="cert-photo" caption="Me holding the Regional Trophy" >}}
+{{< assetimg src="img/regional-trophy.jpg" alt="Regional Championship Trophy" class="center-image" caption="Me holding the Regional Trophy" >}}
 
 
