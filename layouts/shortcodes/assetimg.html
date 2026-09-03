@@ -3,15 +3,19 @@
 {{- $alt := .Get "alt" | default "" -}}
 {{- $class := .Get "class" | default "" -}}
 {{- $caption := .Get "caption" -}}
+{{- $url := "" -}}
 {{- with resources.Get $src -}}
-  {{- if $caption -}}
-  <figure class="cert-figure {{- if eq $class "center-image" }} center-image{{- end }}">
-    <img src="{{ .RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}" loading="lazy"/>
-    <figcaption>{{ $caption }}</figcaption>
-  </figure>
-  {{- else -}}
-  <img src="{{ .RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}" loading="lazy"/>
-  {{- end -}}
+  {{- $url = .RelPermalink -}}
+{{- else -}}
+  {{- $url = relURL $src -}}
+{{- end -}}
+{{- if $caption -}}
+<figure class="cert-figure {{- if eq $class "center-image" }} center-image{{- end }}">
+  <img src="{{ $url }}" alt="{{ $alt }}" class="{{ $class }}" loading="lazy"/>
+  <figcaption>{{ $caption }}</figcaption>
+</figure>
+{{- else -}}
+<img src="{{ $url }}" alt="{{ $alt }}" class="{{ $class }}" loading="lazy"/>
 {{- end -}}
 
 

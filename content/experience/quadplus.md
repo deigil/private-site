@@ -15,6 +15,8 @@ Working as a Field Service Engineer at Quad Plus has put me right on the front l
 
 In heavy manufacturing, every hour of downtime carries massive operational costs. My role is to step into dynamic, high-stakes plant environments, quickly diagnose complex root causes—whether that is an obscure thyristor firing fault on a high-tonnage DC shredder drive, an optical signal budget drop on a PROFIBUS ring, or a ladder logic race condition in a high-speed slitting line—and engineer lasting, robust solutions. From multi-vendor drive coordination to legacy backplane migrations (bringing discontinued Allen-Bradley SLC 500 or Siemens S5 systems into modern architectures), it's the ultimate test of hands-on electrical engineering, networking, and control software.
 
+{{< assetimg src="img/PXL_20260811_085630038.jpg" alt="On-site industrial plant commissioning" class="center-image" caption="Turnkey commissioning and heavy drive motor retrofit on an elevated processing platform" >}}
+
 ---
 
 ## Core Engineering Services
@@ -24,10 +26,14 @@ In heavy manufacturing, every hour of downtime carries massive operational costs
 * **Retrofits & Modernization:** Engineered conversions replacing obsolete AC/DC drives (e.g., PowerFlex 700H VFD to Allen-Bradley SMC-Flex solid-state soft starters; Parker AC890 drive bypass and bus restructuring).
 * **Multi-Drive Synchronization:** Real-time inter-drive communication bus configuration (SINAMICS Link via CBE20, optical PROFIBUS rings) for master-slave torque and speed sharing.
 
+{{< assetimg src="img/PXL_20260810_201305382.jpg" alt="SINAMICS drive chassis with CBE20 communication board" class="center-image" caption="SINAMICS drive chassis inspection and CBE20 communication board integration" >}}
+
 ### 2. PLC Architecture, Migration & Logic Modernization
 * **Legacy Conversions:** Migrating discontinued systems (e.g., Allen-Bradley SLC 5/01 to SLC 5/04 CPU conversions, Siemens Simatic S5 support using PLC Workshop S5) into current architectures.
 * **Control Optimization:** Eliminating race conditions in process permissives, interlocking safety sirens, and refactoring ladder logic, function blocks, and structured text across Studio 5000 and TIA Portal.
 * **Hardware Integration:** Remote and distributed I/O troubleshooting, chassis expansion, and field instrument data acquisition.
+
+{{< assetimg src="img/PXL_20260715_115324217.jpg" alt="Siemens ET 200S distributed I/O rack with PROFINET" class="center-image" caption="Siemens ET 200S distributed I/O rack with PROFINET interface (IM 151-3 PN) during field troubleshooting and I/O checkout" >}}
 
 ### 3. Industrial Networks & Telemetry
 * **Fiber-Optic Infrastructure:** Diagnostics, replacement, and power-budget attenuation testing for Siemens Optical Link Modules (OLMs) running deterministic PROFIBUS networks.
