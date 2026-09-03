@@ -8,6 +8,10 @@
     ],
     "rewrites": [
       {
+        "source": "/experience/quadplus",
+        "destination": "/experience/quadplus/index.html"
+      },
+      {
         "source": "/experience/school",
         "destination": "/experience/school/index.html"
       },
