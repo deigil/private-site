@@ -55,6 +55,9 @@ My master's experience at IIT was a perfect blend of deep technical learning and
 
 But the real highlight was definitely RiskWatch. This project started as a class assignment but turned into something much bigger. We built a wearable device that could detect falls in elderly people and automatically alert caregivers - think of it as a high-tech lifeline. Working on this for two years taught me more about product development, user experience, and working in a multidisciplinary team than any textbook ever could. We actually won 2nd place in the Grainger Innovation Prize competition and walked away with a $10,000 award! Plus, we got to publish a research paper about it, which was pretty surreal for a group of grad students.
 
+{{< assetimg src="img/grainger_group_photo.jpg" alt="Grainger Innovation Competition group" class="center-image" caption="Our team at the Grainger Innovation Competition" >}}
+{{< assetimg src="img/finalists.jpg" alt="Grainger finalists" class="center-image" caption="Grainger Innovation Prize finalists" >}}
+
 - **Technical Skills:**
   - Python Programming
   - Django Web Framework
