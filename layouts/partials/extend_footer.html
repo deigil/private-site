@@ -2,4 +2,16 @@
 {{- $bg := resources.Get "js/reactive-bg.js" | js.Build | fingerprint -}}
 <script src="{{ $bg.RelPermalink }}" integrity="{{ $bg.Data.Integrity }}" defer></script>
 
-
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".post-content p, .post-content li").forEach(function (el) {
+    var text = el.textContent.trim();
+    if (/^Skills\s*:/i.test(text)) {
+      var nextList = el.tagName === "P" ? el.nextElementSibling : el.querySelector("ul");
+      if (nextList && nextList.tagName === "UL") {
+        nextList.classList.add("skills-boxed-list");
+      }
+    }
+  });
+});
+</script>

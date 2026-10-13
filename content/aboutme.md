@@ -8,18 +8,21 @@ tags: ["Europe","Lithuania","ADB","Android","Rooting","Gaming","About Me","Child
 
 ## Hi, I’m Dei 👋
 
-I’m Deimantas (Dei) — a Chicago-based engineer, coach, and tinkerer. I split my time between building systems, shipping projects, and competing in high-level volleyball. I grew up between the U.S. and Lithuania 🇱🇹, and I’m always chasing new ways to learn, optimize, and have fun while doing it.
+I’m Deimantas (Dei) — a Chicago-based engineer, athlete, and tinkerer. I split my time between building systems, shipping projects, and competing in high-level volleyball. I grew up between the U.S. and Lithuania 🇱🇹, and I’m always chasing new ways to learn, optimize, and have fun while doing it.
 
 ### Volleyball
 
- {{< assetimg src="img/volleyball_block.jpg" alt="me as a middle blocking" class="center-image" caption="Blocking as a middle" >}}
+{{< assetimg src="img/volleyball_block.jpg" alt="me as a middle blocking" class="center-image" caption="Blocking as a middle during my NCAA days" >}}
 
-- Currently playing semi‑pro in the VLA with South Side Xtreme Performance (SXPs)
-- Head Coach, Boys Varsity — Jones College Prep (Regional Champions, Spring 2025)
-    - This is the high school where I went to, so its amazing to be back as a coach. In 2019 I won the Chicago Public Schools City Championship and State Regional Championship here as a Junior on Varsity!
-- Previously in college NCAA D3 player, later club and captain for Rocket League Esports.
+- **Collegiate / Esports:** Former NCAA D3 player in college, later club and captain for Rocket League Esports.
+- **South Side Xtreme Performance:** Played one season in the professional league VLA as a **Middle Blocker**.
+- **DuPage Drakes:**
+  - **Last Season:** Played our VLA debut season as a **Middle Blocker**. Starting as a brand new Tier 3 team, we earned promotion to **Tier 2** in just one season — where I served as a key offensive weapon out of the middle.
+  - **Current Season:** Playing with the Drakes again, shifting to **Right Side (Opposite)**.
 
-I’ll be adding more details on my playing career, achievements, and clips soon. If you’re into volleyball too, you’ll like what’s coming.
+
+
+{{< triptych src1="img/setting_me_approach.jpg" src2="img/hitting_against_630.jpg" src3="img/hitting_against_630_2.jpg" alt1="Setting approach with DuPage Drakes" alt2="Hitting against 630" alt3="Follow-through after hit against 630" caption="DuPage Drakes action against 630 — approach, attack, and follow-through during our Tier 2 promotion season" >}}
 
 ### Android and phone modding
 

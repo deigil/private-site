@@ -1,0 +1,31 @@
+{{- /* Usage: {{< triptych src1="img/1.jpg" src2="img/2.jpg" src3="img/3.jpg" alt1="..." alt2="..." alt3="..." caption="..." >}} */ -}}
+{{- $src1 := or (.Get "src1") (.Get "img1") -}}
+{{- $src2 := or (.Get "src2") (.Get "img2") -}}
+{{- $src3 := or (.Get "src3") (.Get "img3") -}}
+{{- $caption := .Get "caption" -}}
+{{- $alt1 := or (.Get "alt1") "Action photo 1" -}}
+{{- $alt2 := or (.Get "alt2") "Action photo 2" -}}
+{{- $alt3 := or (.Get "alt3") "Action photo 3" -}}
+
+<figure class="triptych-figure">
+  <div class="triptych-grid">
+    {{- with resources.Get $src1 -}}
+      <div class="triptych-col">
+        <img src="{{ .RelPermalink }}" alt="{{ $alt1 }}" loading="lazy" />
+      </div>
+    {{- end -}}
+    {{- with resources.Get $src2 -}}
+      <div class="triptych-col">
+        <img src="{{ .RelPermalink }}" alt="{{ $alt2 }}" loading="lazy" />
+      </div>
+    {{- end -}}
+    {{- with resources.Get $src3 -}}
+      <div class="triptych-col">
+        <img src="{{ .RelPermalink }}" alt="{{ $alt3 }}" loading="lazy" />
+      </div>
+    {{- end -}}
+  </div>
+  {{- with $caption -}}
+    <figcaption class="triptych-caption">{{ . }}</figcaption>
+  {{- end -}}
+</figure>

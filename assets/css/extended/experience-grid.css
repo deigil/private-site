@@ -76,7 +76,10 @@
 .center-image img {
   display: block;
   margin: 0 auto 0.5rem auto;
-  max-width: 100%;
+  width: 100%;
+  max-width: min(100%, 650px);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   height: auto;
 }
 

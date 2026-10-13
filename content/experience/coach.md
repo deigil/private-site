@@ -17,6 +17,8 @@ Getting back to Jones College Prep as Head Coach for the Boys Varsity Volleyball
 
 I try to bring what I learned from my own playing days (college D3 and semi-pro) into practice. We spend a lot of time on fundamentals and mental toughness - I want these kids to understand that volleyball isn't just about the physical game, it's about building character and learning to push through tough moments. Each player gets personalized attention during our one-on-one sessions, and watching them grow both as athletes and people makes every practice worth it.
 
+{{< assetimg src="img/regional-trophy.jpg" alt="Regional Championship Trophy" class="center-image" caption="Me holding the Regional Trophy" >}}
+
 **Skills:**
 
 - Coaching
@@ -29,7 +31,3 @@ I try to bring what I learned from my own playing days (college D3 and semi-pro)
 - Performance Management
 - Program Evaluation
 - Conflict Resolution
-
-{{< assetimg src="img/regional-trophy.jpg" alt="Regional Championship Trophy" class="center-image" caption="Me holding the Regional Trophy" >}}
-
-
