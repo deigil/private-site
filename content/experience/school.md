@@ -23,27 +23,6 @@ But college wasn't just about hitting the books. I jumped into volleyball right 
 
 Looking back, undergrad taught me that engineering isn't just about the technical stuff - it's about solving real problems for real people, and that sometimes the best solutions come from the most unexpected collaborations.
 
-- **Technical Skills:**
-  - C/C++ Programming
-  - MIPS Assembly
-  - Python Programming
-  - Linux/Unix Systems
-  - Shell Scripting
-  - Git Version Control
-
-- **Engineering Skills:**
-  - Very-Large-Scale Integration (VLSI)
-  - Cybersecurity
-  - Computer Architecture
-  - Digital Systems Design
-  - Network Security
-  - Circuit Design
-
-- **Academic Skills:**
-  - Advanced Mathematics
-  - Discrete Structures
-  - Data Structures & Algorithms
-
 #### Honors & Awards (Bachelors)
 
 - Bachelor’s in Computer and Cybersecurity Engineering: {{< filelink path="pdf/Bachelors.pdf" title="Bachelors.pdf" >}}
@@ -58,32 +37,39 @@ But the real highlight was definitely RiskWatch. This project started as a class
 {{< assetimg src="img/grainger_group_photo.jpg" alt="Grainger Innovation Competition group" class="center-image" caption="Our team at the Grainger Innovation Competition" >}}
 {{< assetimg src="img/finalists.jpg" alt="Grainger finalists" class="center-image" caption="Grainger Innovation Prize finalists" >}}
 
-- **Technical Skills:**
-  - Python Programming
-  - Django Web Framework
-  - Flask Web Framework
-  - Java Programming
-  - Docker Containerization
-  - Linux/Unix Systems
-  - Git Version Control
-  - Amazon Web Services (AWS)
-
-- **Engineering Skills:**
-  - Computer Engineering
-  - Computer Hardware
-  - Internet of Things (IoT)
-  - Cybersecurity
-  - Software Development
-  - Web Development
-
-- **Soft Skills:**
-  - Leadership
-  - Communication
-  - Project Management
-
 #### Honors & Awards (Masters)
 
 - Master’s in Computer Engineering (Networking Specialization): {{< filelink path="pdf/Masters.pdf" title="Masters.pdf" >}}
 - Grainger Innovation Prize — 2nd Place: {{< filelink path="pdf/grainger_cert.pdf" title="Grainger Certificate (PDF)" >}}
 - Dean’s List Fall 2024: {{< filelink path="pdf/deans_f2024.pdf" title="deans_f2024.pdf" >}}
 - Dean’s List Spring 2024: {{< filelink path="pdf/deans_s2024.pdf" title="deans_s2024.pdf" >}}
+
+**Skills:**
+
+- Python
+- C / C++
+- Java
+- MIPS Assembly
+- Shell Scripting
+- Linux / Unix
+- Git
+- Docker
+- Amazon Web Services (AWS)
+- Django
+- Flask
+- Computer Engineering
+- Computer Architecture
+- Computer Hardware
+- Cybersecurity
+- Network Security
+- Internet of Things (IoT)
+- Software Development
+- Web Development
+- Digital Systems Design
+- Circuit Design
+- VLSI
+- Data Structures & Algorithms
+- Advanced Mathematics
+- Leadership
+- Communication
+- Project Management
