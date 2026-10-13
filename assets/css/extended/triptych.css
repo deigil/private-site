@@ -1,0 +1,60 @@
+/* 3-section triptych photo grid */
+.triptych-figure {
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+.triptych-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  background: var(--entry, rgba(255, 255, 255, 0.04));
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.triptych-col {
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+}
+
+.post-content .triptych-col img,
+.triptych-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0;
+  aspect-ratio: 1080 / 1390;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.triptych-col:hover img {
+  transform: scale(1.03);
+}
+
+.triptych-caption {
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.65rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .triptych-grid {
+    gap: 4px;
+    padding: 4px;
+    border-radius: 8px;
+  }
+  .triptych-col {
+    border-radius: 6px;
+  }
+}

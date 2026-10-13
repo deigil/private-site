@@ -91,7 +91,7 @@ params:
   profileMode:
     enabled: true
     title: Deimantas (Dei)
-    subtitle: "\"rgb = colors = happiness :joy:\""
+    subtitle: "\"whats life without color :joy:\""
     imageUrl: "/img/self.webp"
     imageWidth: 170
     imageHeight: 170
