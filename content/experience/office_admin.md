@@ -1,5 +1,5 @@
 ---
-weight: 8
+weight: 10
 title: 🏫 LT School Office Admin
 url: "/experience/office-admin/"
 slug: "office-admin"
@@ -9,17 +9,19 @@ position: "Office Administrator"
 duration: "Apr 2018 - May 2020"
 location: "Chicago, Illinois, United States · On-site"
 ---
-# Office Administrator
+# Office Administrator & Technology Lead
 
-- **Organization:** The Lithuanian Cultural School of Chicago · Part-time
-- **Duration:** Apr 2018 - May 2020 (2 yrs 2 mos)
-- **Location:** Chicago, Illinois, United States · On-site
+My time at the Lithuanian Cultural School of Chicago was a crash course in wearing many hats! I started as the office admin guy helping with paperwork and schedules, but pretty quickly became the unofficial tech guru since I was the only one who could fix the computers when they broke.
 
-I was an office admin and tech lead for a Lithuanian school on the south side of Chicago called [*Cikagos Lituanistine Mokykla*](https://www.facebook.com/Cikagoslituanistinemokykla/). I was helping teachers, kids, and parents with daily needs. Lead technical aid with all things tech (printers, laptops, desktops, audio, projectors, etc.). Some big events involved prepping audio systems and projection devices for presentations, dancing/music, and general use.
+I ended up managing everything tech-related - fixing printers when they jammed (which happened way too often), setting up computers for new teachers, maintaining the audio systems, and making sure the projectors worked for school events. The big school celebrations were always my favorite though - I'd spend hours setting up the AV equipment so the traditional Lithuanian dances and music performances would look and sound amazing. Nothing beats the feeling of nailing that perfect sound mix right before a performance starts!
 
 **Skills:**
 
-- Communication
-- Leadership
-- Management
-- Computer Repair
+- Office Administration
+- Technology Leadership
+- IT Support & Maintenance
+- Audiovisual Systems
+- Event Technical Coordination
+- Educational Administration
+
+{{< assetimg src="img/cloudflare_port_mapping.png" alt="Technology infrastructure" class="center-image" caption="School technology infrastructure and audiovisual setup" >}}

@@ -19,10 +19,11 @@
 </div>
 {{- end }}
 
-{{- $pages := .RegularPages.ByDate.Reverse }}
+{{- $pages := .RegularPages.ByWeight }}
+{{- $featuredPages := first 6 $pages }}
 
 <div class="experience-grid">
-  {{- range $pages }}
+  {{- range $featuredPages }}
   {{- $position := .Params.position -}}
   {{- $location := .Params.location -}}
   {{- $duration := .Params.duration | default (time.Format "Jan 2006" .Date) -}}
@@ -42,6 +43,55 @@
   </article>
   {{- end }}
 </div>
+
+{{- if gt (len $pages) 6 }}
+<div class="experience-more">
+  <p class="experience-summary">
+    <a href="#" onclick="toggleAllExperiences(); return false;" id="show-more-link">
+      Show all {{ len $pages }} experiences
+    </a>
+  </p>
+
+  <div id="all-experiences" style="display: none;">
+    <div class="experience-grid">
+      {{- range after 6 $pages }}
+      {{- $position := .Params.position -}}
+      {{- $location := .Params.location -}}
+      {{- $duration := .Params.duration | default (time.Format "Jan 2006" .Date) -}}
+      <article class="post-entry">
+        <header class="entry-header">
+          <div class="xp-meta">{{ $duration }}</div>
+          <h2 class="entry-hint-parent">{{ .Title }}</h2>
+          {{- if or $position $location }}
+          <div class="xp-sub">
+            {{- if $position }}{{ $position }}{{ end -}}
+            {{- if and $position $location }} — {{ end -}}
+            {{- if $location }}{{ $location }}{{ end -}}
+          </div>
+          {{- end }}
+        </header>
+        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+      </article>
+      {{- end }}
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleAllExperiences() {
+  const allExperiences = document.getElementById('all-experiences');
+  const showMoreLink = document.getElementById('show-more-link');
+
+  if (allExperiences.style.display === 'none') {
+    allExperiences.style.display = 'block';
+    showMoreLink.textContent = 'Show fewer experiences';
+  } else {
+    allExperiences.style.display = 'none';
+    showMoreLink.textContent = 'Show all {{ len $pages }} experiences';
+  }
+}
+</script>
+{{- end }}
 
 {{- end }}
 

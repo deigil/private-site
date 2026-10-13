@@ -1,5 +1,5 @@
 ---
-weight: 6
+weight: 11
 title: ⛵ Sailing Chicago
 url: "/experience/captain/"
 slug: "captain"
@@ -9,15 +9,13 @@ position: "Boat Captain"
 duration: "Apr 2018 - Present"
 location: "Chicago, Illinois, United States · On-site"
 ---
-# Captain
+# Boat Captain
 
-- **Organization:** Sailing Chicago · Seasonal
-- **Duration:** Apr 2018 - Present
-- **Location:** Chicago, Illinois, United States · On-site
+As a licensed USCG 25 Ton Masters captain, I command a 35ft sailing vessel at the Chicago Yacht Club, providing charter services on Lake Michigan. My expertise ensures safe navigation while delivering exceptional customer experiences through professional service and clear communication.
 
-I am licensed under the United States Coast Guard "USCG 25 Ton Masters" license. I am captain of a 35ft sail boat named "harmony" 🌅 in the Monroe Harbor, Chicago. My job is to take customers out to the lake and make sure they have a good and safe time. Communication and peoples skills are very important here. One notable accomplishment is my review rate with multiple perfect reviews!
+My commitment to safety and customer satisfaction is reflected in consistently receiving perfect reviews from clients. This role has honed my leadership abilities in dynamic, outdoor environments where quick decision-making and interpersonal skills are paramount.
 
-{{< assetimg src="img/sailing.jpg" alt="Sailing on Lake Michigan" class="cert-photo" caption="Picture I was able to take while sailing on Lake Michigan" >}}
+{{< assetimg src="img/sailing.jpg" alt="Sailing on Lake Michigan" class="center-image" caption="Picture I was able to take while sailing on Lake Michigan" >}}
 
 **Skills:**
 

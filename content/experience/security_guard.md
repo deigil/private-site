@@ -1,5 +1,5 @@
 ---
-weight: 5
+weight: 7
 title: 👮 Security Guard
 url: "/experience/security/"
 slug: "security"
@@ -9,20 +9,17 @@ position: "Security Guard"
 duration: "Jan 2021 - Present"
 location: "Chicago, Illinois, United States"
 ---
-# Un-armed Security
+# Security Guard
 
-- **Organization:** Sauliu Namai Banquet Hall · Part-time
-- **Duration:** Jan 2021 - Present
-- **Location:** Chicago, Illinois, United States
+Working security at Sauliu Namai Banquet Hall has been quite the experience! It's a small family-owned Lithuanian banquet hall in Chicago, and I've been keeping an eye on things since 2021. Most nights are pretty chill - checking IDs, making sure the parking lot is secure, keeping an eye on the crowd during weddings and events.
 
-I am a security guard for a small family owned banquet hall on the south west side of Chicago called [**Sauliu Namai**](https://www.sauliu-namai.org). I actually made their website seen below with a simple google site and custom domain name server.
-
-{{< assetimg src="img/banquet.png" alt="Sauliu Namai" class="cert-photo" >}}
-
-Besides that, I had to deal with multiple interactions that unfortunately, could have gone bad. With my presence and de-escalation skills, the conflicts were peacefully resolved and no harm has ever come to the guests or myself at any event I have worked.
+But every now and then things get interesting. I've had to talk down a few heated situations (wedding drama is real!), and it's amazing how just staying calm and talking things through can prevent things from escalating. The owners noticed I knew my way around computers, so I ended up building them a proper website using Google Sites with their own custom domain. Who knew security work would involve web development too?
 
 **Skills:**
 
-- Communication
-- De-escalation
-- Public Safety
+- Security & Access Control
+- Conflict De-escalation
+- Emergency Response
+- Customer Service
+- Web Development
+- Domain Management

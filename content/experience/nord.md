@@ -1,5 +1,5 @@
 ---
-weight: 2
+weight: 3
 title: 👾 Nord Security, LT
 url: "/experience/nord/"
 slug: "nord"
@@ -11,13 +11,11 @@ location: "Vilnius, Vilniaus, Lithuania · On-site"
 ---
 # Site Reliability Engineer
 
-- **Organization:** Nord Security · Internship
-- **Duration:** Apr 2023 - Jul 2023 (4 mos)
-- **Location:** Vilnius, Lithuania · On-site
+My internship at Nord Security was a game-changer. I got to work on their massive global infrastructure - we're talking over 5,000 servers worldwide! As part of the SRE team, I spent my days building Django web apps for their production and QA environments, keeping critical services running smoothly, and wrestling with Docker containers until they behaved.
 
-During my internship, I worked with the SRE infra team, contributing to various projects for their 5000+ servers worldwide. This included web development for PROD/QA environments with Django, server management, maintaining utilized services, and working on Docker images while conducting thorough research on changelogs. Moreover, I implemented bash automation procedures and devised backup solutions for specific SQL databases to ensure data integrity and system reliability.
+The highlight was definitely automating all the repetitive server tasks with Bash scripts and building out solid backup systems for their SQL databases. It was stressful at times (infrastructure at this scale is no joke), but incredibly rewarding to see everything running like clockwork. This experience really opened my eyes to how enterprise-level DevOps actually works in the real world.
 
-{{< assetimg src="img/nord-onsite.jpg" alt="Nord Security HQ" class="cert-photo" caption="First day Nord Security building in Vilnius, Lithuania 🇱🇹" >}}
+{{< assetimg src="img/nord-onsite.jpg" alt="Nord Security HQ" class="center-image" caption="First day Nord Security building in Vilnius, Lithuania 🇱🇹" >}}
 
 **Skills:**
 

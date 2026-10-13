@@ -19,7 +19,7 @@ defaultContentLanguage: en
 # IMPORTANT: These settings fix preview URL issues
 uglyURLs: false
 canonifyURLs: false  # Don't force absolute URLs
-relativeURLs: true   # Use relative URLs for better preview compatibility
+relativeURLs: false   # Use absolute URLs for development
 
 # Permalink structure
 permalinks:
