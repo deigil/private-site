@@ -24,6 +24,4 @@ But it wasn't all just coding from a desk - I also got my hands dirty with elect
 - Control Systems Design
 - Manufacturing Process Optimization
 
-{{< assetimg src="img/network-diagram.svg" alt="Industrial control systems" class="center-image" caption="PLC programming and industrial automation systems" >}}
-
 
